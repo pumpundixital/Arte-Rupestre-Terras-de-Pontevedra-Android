@@ -1,0 +1,102 @@
+[
+  {
+    "text": "¿En dónde se grabaron los petroglifos?",
+    "answer": {
+      "text": "Sobre piedra"
+    },
+    "answers": [
+      {
+        "text": "Sobre piedra"
+      },
+      {
+        "text": "Sobre tierra"
+      },
+      {
+        "text": "Dentro de las casas"
+      },
+      {
+        "text": "En madera"
+      }
+    ]
+  },
+  {
+    "text": "¿Qué animal es el más representado en los petroglifos gallegos?",
+    "answer": {
+      "text": "Ciervo"
+    },
+    "answers": [
+      {
+        "text": "Águila"
+      },
+      {
+        "text": "Ornitorrinco"
+      },
+      {
+        "text": "Ciervo"
+      },
+      {
+        "text": "Ratón"
+      }
+    ]
+  },
+  {
+    "text": "¿Con qué se hacían los petroglifos?",
+    "answer": {
+      "text": "Piedras"
+    },
+    "answers": [
+      {
+        "text": "Pinceles"
+      },
+      {
+        "text": "Piedras"
+      },
+      {
+        "text": "Barro"
+      },
+      {
+        "text": "Témperas"
+      }
+    ]
+  },
+  {
+    "text": "¿Quién hizo los petroglifos?",
+    "answer": {
+      "text": "Los hombres prehistóricos"
+    },
+    "answers": [
+      {
+        "text": "Los romanos"
+      },
+      {
+        "text": "La lluvia"
+      },
+      {
+        "text": "Animales"
+      },
+      {
+        "text": "Los hombres prehistóricos"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuándo acaba la prehistoria?",
+    "answer": {
+      "text": "Con la invención de la escritura"
+    },
+    "answers": [
+      {
+        "text": "Con la invención de la escritura"
+      },
+      {
+        "text": "El año 0"
+      },
+      {
+        "text": "Con la aparición de los dinosaurios"
+      },
+      {
+        "text": "Al inventarse la rueda"
+      }
+    ]
+  }
+]

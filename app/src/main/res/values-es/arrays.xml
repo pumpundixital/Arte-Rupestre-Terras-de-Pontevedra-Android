@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="drawer_item_centers">Centros</string>
+    <string name="drawer_item_itineraries">Áreas</string>
+    <string name="drawer_item_intro">Introducción</string>
+    <string name="drawer_item_help">Consejos</string>
+    <string name="drawer_item_map">Mapa</string>
+    <string name="drawer_item_adventure">Aventura</string>
+    <string name="drawer_item_more_info">Saber más</string>
+    <string name="drawer_item_settings">Configuración</string>
+</resources>

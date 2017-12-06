@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_toolbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/menu"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center|end"
+        android:layout_toEndOf="@id/image_toolbar_menu"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp">
+
+        <ImageButton
+            android:id="@+id/img_filter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|end"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/filter_button"
+            android:src="@drawable/ic_filter" />
+
+        <TextView
+            android:textColor="@color/black"
+            fontPath="fonts/Roboto-Black.ttf"
+            android:visibility="gone"
+            android:id="@+id/tv_title_petra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:textAllCaps="true"
+            tools:ignore="MissingPrefix" />
+    </FrameLayout>
+
+</RelativeLayout>

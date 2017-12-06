@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@null"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             tools:context="org.terrasdepontevedra.petra.ui.gallery.GalleryActivity"
+             tools:showIn="@layout/activity_gallery">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_gallery_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"/>
+
+    <org.terrasdepontevedra.petra.util.views.CirclePageIndicator
+        android:id="@+id/indicator_image"
+        app:radius="4dp"
+        android:layout_width="match_parent"
+        app:pageColor="@color/gray"
+        app:fillColor="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

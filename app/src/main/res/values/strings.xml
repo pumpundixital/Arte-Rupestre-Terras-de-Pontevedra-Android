@@ -1,0 +1,170 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false" tools:ignore="PrivateResource">Arte Rupestre</string>
+    <string name="app_name_line" translatable="false">ARTE\nRUPESTRE</string>
+
+    <string name="title_activity_itinerary" translatable="false">ItineraryActivity</string>
+    <string name="title_activity_center_detail" translatable="false">CenterDetailActivity</string>
+    <string name="title_activity_gallery" translatable="false">GalleryActivity</string>
+    <string name="title_activity_score" translatable="false">ScoreActivity</string>
+    <string name="title_activity_quiz" translatable="false">QuizActivity</string>
+
+    <string name="transition_item_itinerary" translatable="false">transition_item_itinerary</string>
+    <string name="menu" translatable="false">Menu</string>
+    <string name="icon" translatable="false">icon</string>
+    <string name="icon_drawer" translatable="false">Icon drawer</string>
+    <string name="filter_button" translatable="false">Filter button</string>
+    <string name="full_screen" translatable="false">Full screen</string>
+    <string name="loading" translatable="false">Loading</string>
+
+    <string name="notification_download_map_title">Pontevedra map download</string>
+    <string name="notification_download_map_description">Downloading…</string>
+    <string name="message_error_not_internet_conection">There isn\'t Internet connection.</string>
+    <string name="message_error_empty_view">There isn\'t data.</string>
+    <string name="message_error_some_error_occur">Some error has occurred</string>
+    <string name="permission_location_rationale">To start the Yincana you need to activate the localization permission.</string>
+
+    <string name="description">Description</string>
+    <string name="schedule">Schedule</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="quiz">Quiz</string>
+    <string name="yincana">Yincana</string>
+    <string name="score">My Bag</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Finish</string>
+    <string name="button_allow">Accept</string>
+    <string name="button_deny">Cancel</string>
+
+    <string name="see_route">See petroglyphs</string>
+    <string name="download_map">Download map</string>
+    <string name="download_content">Download content</string>
+    <string name="see_more">See more</string>
+    <string name="see_map">See on map</string>
+    <string name="activate_location">Activate location</string>
+    <string name="go_to_settings">Go to the settings</string>
+
+    <string name="wizard_title_1">Rock Art</string>
+    <string name="wizard_title_2">Petroglyphs</string>
+    <string name="wizard_title_3">Tradition</string>
+    <string name="wizard_title_4">Age</string>
+    <string name="wizard_paragraph_1">Few lands preserve such an abundance of vestiges of the Prehistory as those of Pontevedra. Here, there are remnants from the Neolithic or the Megalithic until the "castros" times and the beginnings of the Roman occupation. The cultural and patrimonial offer of this space must be written with capital letters when we talk about Rock Art.</string>
+    <string name="wizard_paragraph_2">There are many petroglyphs that can be found in the hills of Campo Lameiro, Cerdedo-Cotobade, Marín, Poio, Ponte Caldelas, Pontevedra, Vilaboa, A Lama and Barro; In addition to the megalithic tombs and castros that rise in all this territory.</string>
+    <string name="wizard_paragraph_3">The presence of these remains helped the transmission of a rich folk tradition associated with the traces of the past that gave rise to a series of myths and legends that reach our days, as the legend that assures that Teucro (one of the heroes of the Trojan War) is the founder of Pontevedra.</string>
+    <string name="wizard_paragraph_4">The Rock Art is a phenomenon that spans several millennia of duration, the main group of Galician engravings was generated during the III and II a.C millennia, and in the Bronze Age.</string>
+
+    <string name="wizard_title_5">What are petroglyphs?</string>
+    <string name="wizard_paragraph_5">The petroglyphs are engraved on the stone in the open air. In some, nature is represented with horses, snakes, deer and also hunting scenes. In others there are geometric representations such as labyrinths, spirals and bowls.Do you want to know the best works of Terras de Pontevedra? Come with me.</string>
+
+
+    <string name="me">Me</string>
+    <string name="help_petra_1">Hello.</string>
+    <string name="help_petra_2">Hello! My name is Petra. I\'m an artist of the bronze age.</string>
+    <string name="help_petra_3">I love making petroglyphs in stone.</string>
+    <string name="help_petra_4">I live between Verdugo and Lérez rivers, in a paradise called TERRAS DE PONTEVEDRA</string>
+    <string name="help_petra_5">How are you?</string>
+    <string name="help_petra_6">I\'m fine, thanks. Do you have any suggestion for walking among petroglyphs?</string>
+    <string name="help_petra_7">Oh! Yes, I do. I can tell you a few things:</string>
+    <string name="help_petra_8">Do not touch or step over the engravings, as that helps to accelerate its erosion. That means that traces of our history could be lost.</string>
+    <string name="help_petra_9">Even if you do not appreciate well the petroglyphs, do not re-mark them. Paints or inks helps the destruction of the designs.</string>
+    <string name="help_petra_10">What can I do to avoid it?</string>
+    <string name="help_petra_11">During the visit, use the trails and platforms enabled.</string>
+    <string name="help_petra_12">Respect the trees and vegetation.</string>
+    <string name="help_petra_13">Take with you the trash and other objects that can damage the environment. Put them in the right places.</string>
+    <string name="help_petra_14">Ok.</string>
+    <string name="help_petra_15">When is the best time to see the petroglyphs?</string>
+    <string name="help_petra_16">The visit will be more rewarding at sunrise or sunset. At this time it is easier to see the furrows on the rocky surfaces.</string>
+    <string name="help_petra_17">Does all the petroglyphs have an easily access?</string>
+    <string name="help_petra_18">Although some routes have trails and platforms, most of the petroglyphs are located in mountain areas. So I recommend you to pay your visit with comfortable clothes and closed footwear.</string>
+    <string name="help_petra_19">Thank you, Petra.</string>
+    <string name="help_petra_20">Enjoy the visit.</string>
+
+    <string name="yes">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="petra_message_main">You can find an exciting adventure in the menu. Are you ready?</string>
+    <string name="language">Language</string>
+    <string name="download_content_description">You can download all the content to use this app without internet.</string>
+    <string name="download_map_description">Make sure you are connected to a WiFi network. Downloading maps can take several minutes.</string>
+
+    <string name="petra_tips">Petra\'s tips</string>
+    <string name="petra_message_main_filter">Here you can filter by itinerary.</string>
+    <string name="petra_message_gallery_full_screen">Touch to enlarge the image.</string>
+    <string name="petra_message_menu_horizontal">Here you can share.</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="go_to_place">Go there</string>
+    <string name="site">Site</string>
+    <string name="access">Access</string>
+    <string name="morphology">Morphology</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="see_more_center">See Center</string>
+    <string name="see_more_itinerary">See Area</string>
+    <string name="web" translatable="false">Web</string>
+    <string name="gallery">Gallery</string>
+    <string name="audio" translatable="false">Audio</string>
+    <string name="notification_download_content_title">Download Content</string>
+    <string name="must_accept_storage_permission_to_donwload_content">You must accept the storage permission to download the content.</string>
+    <string name="must_accept_storage_permission_to_donwload_content_in_settings">You must accept the storage permission to download the content in settings.</string>
+    <string name="press_again">Press again to exit</string>
+    <string name="share">Share</string>
+    <string name="see_on_web">See on the Web</string>
+    <string name="can_see">You can visit the %1$s in: %2$s</string>
+    <string name="visit_the">Visit the %1$s in: %2$s</string>
+    <string name="score_description">Immerse yourself in the adventure and unlock all the achievements</string>
+    <string name="yincana_description">Start your adventure and find all the petroglyphs</string>
+    <string name="quiz_description">Do you want to check how much do you know about petroglyphs?</string>
+    <string name="quiz_1" translatable="false">Quiz 1</string>
+    <string name="quiz_2" translatable="false">Quiz 2</string>
+    <string name="quiz_3" translatable="false">Quiz 3</string>
+    <string name="quiz_4" translatable="false">Quiz 4</string>
+    <string name="quiz_5" translatable="false">Quiz 5</string>
+    <string name="see_all">See all</string>
+    <string name="select_quiz">Choose a quiz:</string>
+    <string name="continue_">Continue</string>
+    <string name="results">Result:</string>
+    <string name="downloaded_map">Download map</string>
+    <string name="donwloaded_content">Downloaded content</string>
+    <string name="help_yincana_search">Hold the button if you are next to some petroglyph.</string>
+    <string name="yincana_action">Check position</string>
+    <string name="completed_achievement">Completed achievement!</string>
+    <string name="there_was_an_error_active_permissions">There was an error, activate the permissions</string>
+
+    <string name="wizard_title_1_yincana">Hunting petroglyphs</string>
+    <string name="wizard_desc_1_yincana">That\'s what we propose in this Yincana, collect petroglyphs. For it you must visit them, know them and keep them in your bag.</string>
+
+    <string name="wizard_title_2_yincana">How does it work?</string>
+    <string name="wizard_desc_2_yincana">Very easy, every time you visit a petroglyph or complete a Quiz you will discover a card. The more you discover, the more powers you will have. You can be the wise man of the tribe.</string>
+
+    <string name="wizard_title_3_yincana">What should I do?</string>
+    <string name="wizard_desc_3_yincana">Start with the Quizzes (small exams on Rock Art), it will be like your primary education. Continue visiting Petroglyphs, when the phone detects that you have visited one will open a card.</string>
+
+    <string name="wizard_title_4_yincana">Lets go!</string>
+    <string name="wizard_desc_4_yincana">Do not forget to visit the Interpretation Centers and most importantly: enjoy the rock art, one of the great vestiges of our past.</string>
+
+
+    <string name="must_accept_storage_permission_to_listen_audio">Must accept storage permission to listen audio</string>
+    <string name="must_accept_storage_permission_to_listen_audio_in_settings">Must accept storage permission to listen audio in settings</string>
+    <string name="see_results">Results</string>
+    <string name="retry">Retry</string>
+    <string name="send_mail">Send mail</string>
+
+    <string name="accommodations">Accommodations</string>
+    <string name="accommodations_description">The hotel offer of Terras de Pontevedra allows the stay for all budgets with an unbeatable quality-price ratio.</string>
+    <string name="food">Food</string>
+    <string name="food_description">The gastronomic heritage of Terras de Pontevedra invites the visitor to taste all kinds of delicacies. Discover all these secrets.</string>
+    <string name="what_to_see">What to see?</string>
+    <string name="what_to_see_description">Discover the unique places and moments that we recommend for your trip.</string>
+    <string name="how_to_travel">How to travel</string>
+    <string name="how_to_travel_description">Information to get to Terras de Pontevedra, by car, by public transport, by plane or train…</string>
+    <string name="url_accommodations">http://www.terrasdepontevedra.org/es/donde-dormir.html</string>
+    <string name="url_food">http://www.terrasdepontevedra.org/es/donde-comer-restaurantes.html</string>
+    <string name="url_what_to_see">http://www.terrasdepontevedra.org/es/que-ver/casco-historico-de-pontevedra.html</string>
+    <string name="url_how_to_travel">http://www.terrasdepontevedra.org/es/contacto.html</string>
+
+    <string name="dialog_title_scores">Wou!</string>
+    <string name="dialog_content_scores">Challenge completed. Continue to become the wise man of the tribe.</string>
+    <string name="notification_enter_location">You are near!</string>
+    <string name="show_bag">Open my bag</string>
+</resources>

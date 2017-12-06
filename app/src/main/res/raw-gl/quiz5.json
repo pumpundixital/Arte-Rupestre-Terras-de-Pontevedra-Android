@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Cando empeza a Prehistoria?",
+    "answer": {
+      "text": "Cos primeiros homínidos"
+    },
+    "answers": [
+      {
+        "text": "Cos primeiros homínidos"
+      },
+      {
+        "text": "Coa escritura"
+      },
+      {
+        "text": "Cando desaparecen os dinosauros"
+      },
+      {
+        "text": "Coa invención da roda"
+      }
+    ]
+  },
+  {
+    "text": "Con qué se fai o bronce?",
+    "answer": {
+      "text": "Cobre e Estaño"
+    },
+    "answers": [
+      {
+        "text": "Ferro e Cobre"
+      },
+      {
+        "text": "Cobre e cuarzo"
+      },
+      {
+        "text": "Cerámica"
+      },
+      {
+        "text": "Cobre e Estaño"
+      }
+    ]
+  },
+  {
+    "text": "Ademais dos figurativos, Qué tipo de petroglifos hai?",
+    "answer": {
+      "text": "Xeométricos"
+    },
+    "answers": [
+      {
+        "text": "Técnicos"
+      },
+      {
+        "text": "Xeométricos"
+      },
+      {
+        "text": "Artísticos"
+      },
+      {
+        "text": "Arquitectónicos"
+      }
+    ]
+  },
+  {
+    "text": "Cando se ven mellor os petroglifos?",
+    "answer": {
+      "text": "O amencer ou o ocaso"
+    },
+    "answers": [
+      {
+        "text": "Ao mediodía"
+      },
+      {
+        "text": "Despois do Mediodía"
+      },
+      {
+        "text": "O amencer ou o ocaso"
+      },
+      {
+        "text": "Cando chove"
+      }
+    ]
+  },
+  {
+    "text": "Cantos camiños hai nos labirintos atlánticos?",
+    "answer": {
+      "text": "Un"
+    },
+    "answers": [
+      {
+        "text": "Un"
+      },
+      {
+        "text": "Dous"
+      },
+      {
+        "text": "Tres"
+      },
+      {
+        "text": "Catro"
+      }
+    ]
+  }
+]

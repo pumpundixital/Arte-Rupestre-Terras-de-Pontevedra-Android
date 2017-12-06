@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_item_answer"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/cylinder_white"
+    android:orientation="vertical">
+
+    <org.terrasdepontevedra.petra.ui.views.SmoothCheckBox
+        android:id="@+id/check_survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:saveEnabled="false" />
+
+    <TextView
+        android:id="@+id/text_item_survey_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center_vertical"
+        android:textAlignment="textStart"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/check_survey"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

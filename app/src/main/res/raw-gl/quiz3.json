@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Qué significa a palabra grega gliphos?",
+    "answer": {
+      "text": "Grabado"
+    },
+    "answers": [
+      {
+        "text": "Pedra"
+      },
+      {
+        "text": "Grabado"
+      },
+      {
+        "text": "Debuxo"
+      },
+      {
+        "text": "Paxaro"
+      }
+    ]
+  },
+  {
+    "text": "Cando se graban humanos nas escenas, qué soen facer nas representacions?",
+    "answer": {
+      "text": "Cazar"
+    },
+    "answers": [
+      {
+        "text": "Recolectar"
+      },
+      {
+        "text": "Grabar en pedra"
+      },
+      {
+        "text": "Construir"
+      },
+      {
+        "text": "Cazar"
+      }
+    ]
+  },
+  {
+    "text": "Qué tipo de pedra é a máis común na provincia de Pontevedra?",
+    "answer": {
+      "text": "Granito"
+    },
+    "answers": [
+      {
+        "text": "Granito"
+      },
+      {
+        "text": "Cuarzo"
+      },
+      {
+        "text": "Caliza"
+      },
+      {
+        "text": "Mármore"
+      }
+    ]
+  },
+  {
+    "text": "Qué hai que facer ante un petroglifo?",
+    "answer": {
+      "text": "Observalo"
+    },
+    "answers": [
+      {
+        "text": "Grabar máis símbolos"
+      },
+      {
+        "text": "Pisalo"
+      },
+      {
+        "text": "Pintalo"
+      },
+      {
+        "text": "Observalo"
+      }
+    ]
+  },
+  {
+    "text": "Qué son os círculos concéntricos?",
+    "answer": {
+      "text": "Círculos co mesmo centro"
+    },
+    "answers": [
+      {
+        "text": "Círculos que se cruzan"
+      },
+      {
+        "text": "Círculos co mesmo centro"
+      },
+      {
+        "text": "Círculos do mesmo tamaño"
+      },
+      {
+        "text": "Círculos non lineais"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="margin_horizontal">20dp</dimen>
+    <dimen name="margin_horizonal_small">10dp</dimen>
+
+    <dimen name="item_drawer_height">46dp</dimen>
+
+    <dimen name="pause_bar_width">7dp</dimen>
+    <dimen name="pause_bar_distance">5dp</dimen>
+    <dimen name="pause_bar_height">27dp</dimen>
+</resources>

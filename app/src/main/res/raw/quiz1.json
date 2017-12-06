@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Where were the petroglyphs engraved?",
+    "answer": {
+      "text": "On stone"
+    },
+    "answers": [
+      {
+        "text": "On stone"
+      },
+      {
+        "text": "On earth"
+      },
+      {
+        "text": "Inside the houses"
+      },
+      {
+        "text": "In the trees"
+      }
+    ]
+  },
+  {
+    "text": "Which animal is the most represented in the Galician petroglyphs?",
+    "answer": {
+      "text": "Deer"
+    },
+    "answers": [
+      {
+        "text": "Eagle"
+      },
+      {
+        "text": "Platypus"
+      },
+      {
+        "text": "Deer"
+      },
+      {
+        "text": "Mouse"
+      }
+    ]
+  },
+  {
+    "text": "What were the petroglyphs made of?",
+    "answer": {
+      "text": "Stones"
+    },
+    "answers": [
+      {
+        "text": "Brushes"
+      },
+      {
+        "text": "Stones"
+      },
+      {
+        "text": "Mud"
+      },
+      {
+        "text": "Tempera"
+      }
+    ]
+  },
+  {
+    "text": "Who made the petroglyphs?",
+    "answer": {
+      "text": "Prehistoric men"
+    },
+    "answers": [
+      {
+        "text": "The Romans"
+      },
+      {
+        "text": "The rain"
+      },
+      {
+        "text": "Animals"
+      },
+      {
+        "text": "Prehistoric men"
+      }
+    ]
+  },
+  {
+    "text": "When does prehistory end?",
+    "answer": {
+      "text": "With the invention of writing"
+    },
+    "answers": [
+      {
+        "text": "With the invention of writing"
+      },
+      {
+        "text": "The year 0"
+      },
+      {
+        "text": "With the dinosaurs"
+      },
+      {
+        "text": "When the wheel was invented"
+      }
+    ]
+  }
+]

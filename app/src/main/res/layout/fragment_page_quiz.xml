@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_quiz_bot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <org.terrasdepontevedra.petra.ui.views.NoSwipeViewPager
+            android:id="@+id/pager_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="@color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_opinion_back"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_weight="0"
+                android:text="@string/action_back"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                tools:ignore="MissingPrefix,NestedWeights" />
+
+
+            <org.terrasdepontevedra.petra.util.views.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:centered="true"
+                app:fillColor="@color/colorPrimary"
+                app:pageColor="@color/gray"
+                app:unselectedColor="#d4ffffff" />
+
+            <TextView
+                android:id="@+id/text_opinion_next"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="0"
+                android:text="@string/action_next"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

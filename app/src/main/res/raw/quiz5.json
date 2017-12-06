@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What is the Paleolithic?",
+    "answer": {
+      "text": "It is the first part of the the prehistory"
+    },
+    "answers": [
+      {
+        "text": "Its a big picture"
+      },
+      {
+        "text": "It is the first part of the the prehistory"
+      },
+      {
+        "text": "Its a stone at ground level"
+      },
+      {
+        "text": "Its an old stone"
+      }
+    ]
+  },
+  {
+    "text": "What is the bronze made of",
+    "answer": {
+      "text": "Copper and Tin"
+    },
+    "answers": [
+      {
+        "text": "Iron and Copper"
+      },
+      {
+        "text": "Copper and quartz"
+      },
+      {
+        "text": "Ceramics"
+      },
+      {
+        "text": "Copper and Tin"
+      }
+    ]
+  },
+  {
+    "text": "Besides the figurative ones, what kind of petroglyphs are there?",
+    "answer": {
+      "text": "Geometrics"
+    },
+    "answers": [
+      {
+        "text": "Technicians"
+      },
+      {
+        "text": "Geometrics"
+      },
+      {
+        "text": "Artistic"
+      },
+      {
+        "text": "Architectural"
+      }
+    ]
+  },
+  {
+    "text": "Wich is the best time to see petroglyphs?",
+    "answer": {
+      "text": "At dawn or at sunse"
+    },
+    "answers": [
+      {
+        "text": "At noon"
+      },
+      {
+        "text": "After the midday"
+      },
+      {
+        "text": "At dawn or at sunse"
+      },
+      {
+        "text": "When it rains"
+      }
+    ]
+  },
+  {
+    "text": "How many paths are there in the Atlantic labyrinths?",
+    "answer": {
+      "text": "One"
+    },
+    "answers": [
+      {
+        "text": "One"
+      },
+      {
+        "text": "Two"
+      },
+      {
+        "text": "Three"
+      },
+      {
+        "text": "Four"
+      }
+    ]
+  }
+]

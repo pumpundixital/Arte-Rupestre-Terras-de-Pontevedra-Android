@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:orientation="vertical">
+
+    <co.mobiwise.library.ProgressLayout
+        android:id="@+id/mProgressAudio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoProgress="true"
+        app:emptyColor="@color/grey_light"
+        app:loadedColor="@color/grey_mid"
+        app:maxProgress="100"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <org.terrasdepontevedra.petra.ui.views.audioPlayer.PlayPauseView
+                android:id="@+id/button_play_pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:foreground="?android:selectableItemBackground"
+                android:stateListAnimator="@animator/button_elevation"/>
+
+            <ImageView
+                android:id="@+id/loading_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/spiral"
+                android:visibility="gone"
+                android:contentDescription="@string/icon"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text_audio_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Background color for light LeBubbleView. -->
+    <!-- Background color for dark LeBubbleView. -->
+    <color name="bubbleView_dark_background">@color/black</color>
+    <!-- text color for light LeBubbleTextView. -->
+    <color name="bubbleView_light_text_color">@color/black</color>
+    <!-- text color for dark LeBubbleTextView. -->
+    <color name="bubbleView_dark_text_color">@color/black</color>
+    <!-- press Background color for light LeBubbleView. -->
+    <!-- press Background color for dark LeBubbleView. -->
+    <color name="bubbleView_dark_press_background">@color/black</color>
+
+    <color name="black">#696969</color>
+    <color name="white">#F9F7F7</color>
+
+</resources>

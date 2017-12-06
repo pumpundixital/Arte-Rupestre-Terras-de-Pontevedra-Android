@@ -1,0 +1,104 @@
+[
+  {
+    "text": "Which is older, the bronze age or the iron age?",
+    "answer": {
+      "text": "Bronze Age"
+    },
+    "answers": [
+      {
+        "text": "Iron Age"
+      },
+      {
+        "text": "Bronze Age"
+      },
+      {
+        "text": "They went at once"
+      },
+      {
+        "text": "Any"
+      }
+    ]
+  },
+  {
+    "text": "What is the most usual geometric shape in petroglyphs?",
+    "answer": {
+      "text": "Circle"
+    },
+    "answers": [
+      {
+        "text": "Pentagon"
+      },
+      {
+        "text": "Triangle"
+      },
+      {
+        "text": "Sphere"
+      },
+      {
+        "text": "Circle"
+      }
+    ]
+  },
+  {
+    "text": "Humans, when did they become sedentary?",
+    "answer": {
+      "text": "The Neolithic"
+    },
+    "answers": [
+
+      {
+        "text": "The Neolithic"
+      },
+      {
+        "text": "The Paleolithic"
+      },
+      {
+        "text": "The ancient age"
+      },
+      {
+        "text": "The romanticism"
+      }
+    ]
+  },
+  {
+    "text": "What do we call cups?",
+    "answer": {
+      "text": "Gaps in the rock"
+    },
+    "answers": [
+      {
+        "text": "Gaps in the rock"
+      },
+      {
+        "text": "Places to cook"
+      },
+      {
+        "text": "C-shaped marks"
+      },
+      {
+        "text": "Places to enkindle"
+      }
+    ]
+  },
+  {
+
+    "text": "Which period is longer?",
+    "answer": {
+      "text": "The prehistory"
+    },
+    "answers": [
+      {
+        "text": "The prehistory"
+      },
+      {
+        "text": "The ancient history"
+      },
+      {
+        "text": "The Middle Ages"
+      },
+      {
+        "text": "The Modern Period"
+      }
+    ]
+  }
+]

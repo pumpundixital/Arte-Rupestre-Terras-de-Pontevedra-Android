@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>@string/drawer_item_intro</item>
+        <item>@string/drawer_item_centers</item>
+        <item>@string/drawer_item_itineraries</item>
+        <item>@string/drawer_item_map</item>
+        <item>@string/drawer_item_adventure</item>
+        <item>@string/drawer_item_help</item>
+        <item>@string/drawer_item_more_info</item>
+        <item>@string/drawer_item_settings</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons" translatable="false">
+        <item>@drawable/ic_intro</item>
+        <item>@drawable/ic_center</item>
+        <item>@drawable/ic_itinerary</item>
+        <item>@drawable/ic_map</item>
+        <item>@drawable/ic_adventure</item>
+        <item>@drawable/ic_tip</item>
+        <item>@drawable/ic_info</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+    <string name="drawer_item_centers">Centers</string>
+    <string name="drawer_item_itineraries">Areas</string>
+    <string name="drawer_item_intro">Introduction</string>
+    <string name="drawer_item_help">Tips</string>
+    <string name="drawer_item_map">Map</string>
+    <string name="drawer_item_adventure">Adventure</string>
+    <string name="drawer_item_more_info">More info</string>
+    <string name="drawer_item_settings">Settings</string>
+</resources>

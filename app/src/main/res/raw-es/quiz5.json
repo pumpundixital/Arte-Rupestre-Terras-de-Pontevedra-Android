@@ -1,0 +1,102 @@
+[
+  {
+    "text": "¿Cuántas líneas forman una espiral?",
+    "answer": {
+      "text": "Una"
+    },
+    "answers": [
+      {
+        "text": "Nueve"
+      },
+      {
+        "text": "Siete"
+      },
+      {
+        "text": "Círculos"
+      },
+      {
+        "text": "Una"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuando empieza la Prehistoria?",
+    "answer": {
+      "text": "Con los primeros homínidos"
+    },
+    "answers": [
+      {
+        "text": "Con los primeros homínidos"
+      },
+      {
+        "text": " Con la escritura"
+      },
+      {
+        "text": " Cuando desaparecen los dinosaurios"
+      },
+      {
+        "text": "Con la invención de la rueda"
+      }
+    ]
+  },
+  {
+    "text": "¿Con qué se hace el bronce?",
+    "answer": {
+      "text": "Cobre y Estaño"
+    },
+    "answers": [
+      {
+        "text": "Hierro y Cobre"
+      },
+      {
+        "text": "Cobre y cuarzo"
+      },
+      {
+        "text": "Cerámica"
+      },
+      {
+        "text": "Cobre y Estaño"
+      }
+    ]
+  },
+  {
+    "text": "Además de los figurativos, ¿Qué tipo de petroglifos hay?",
+    "answer": {
+      "text": "Geométricos"
+    },
+    "answers": [
+      {
+        "text": "Técnicos"
+      },
+      {
+        "text": "Geométricos"
+      },
+      {
+        "text": "Artísticos"
+      },
+      {
+        "text": "Arquitectónicos"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuándo se ven mejor los petroglifos?",
+    "answer": {
+      "text": "Al amanecer o al ocaso"
+    },
+    "answers": [
+      {
+        "text": "Al mediodía"
+      },
+      {
+        "text": "Después del Mediodía"
+      },
+      {
+        "text": "Al amanecer o al ocaso"
+      },
+      {
+        "text": "Cuando llueve"
+      }
+    ]
+  }
+]

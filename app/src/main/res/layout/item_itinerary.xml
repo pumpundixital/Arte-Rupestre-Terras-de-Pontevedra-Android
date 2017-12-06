@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingBottom="70dp">
+
+
+    <FrameLayout
+        android:id="@+id/layout_container_itinerary_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:transitionName="@string/transition_item_itinerary">
+
+        <ImageView
+            android:id="@+id/image_item_itinerary"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:contentDescription="@string/icon"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7e000000"/>
+
+        <FrameLayout
+            android:id="@+id/layout_btn_start_itinerary"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_blue">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/icon"
+                android:src="@drawable/ic_play_arrow"
+                android:tint="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_see_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/cylinder_blue"
+            android:minWidth="140dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/see_map"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </FrameLayout>
+
+        <org.terrasdepontevedra.petra.ui.views.UnderlinedTextView
+            android:id="@+id/tv_title"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="18dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:underlineColor="@color/blue_dark"
+            app:underlineWidth="3dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/black"/>
+
+
+        <FrameLayout
+            android:id="@+id/btn_see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="17dp"
+            android:background="@drawable/cylinder_black"
+            android:minWidth="140dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/see_more_itinerary"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

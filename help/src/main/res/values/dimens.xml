@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bubbleView_default_radius">4dp</dimen>
+    <dimen name="bubbleView_default_text_size">15sp</dimen>
+</resources>

@@ -1,0 +1,102 @@
+[
+  {
+    "text": "Onde se gravaron os petróglifos??",
+    "answer": {
+      "text": "Sobre pedra"
+    },
+    "answers": [
+      {
+        "text": "Sobre pedra"
+      },
+      {
+        "text": "Sobre terra"
+      },
+      {
+        "text": "Dentro das casas"
+      },
+      {
+        "text": "En madeira"
+      }
+    ]
+  },
+  {
+    "text": "Qué animal é p máis representado nos petroglifos galegos?",
+    "answer": {
+      "text": "Cervo"
+    },
+    "answers": [
+      {
+        "text": "Águia"
+      },
+      {
+        "text": "Ornitorrinco"
+      },
+      {
+        "text": "Cervo"
+      },
+      {
+        "text": "Rato"
+      }
+    ]
+  },
+  {
+    "text": "Con qué se facían os petroglifos?",
+    "answer": {
+      "text": "Pedras"
+    },
+    "answers": [
+      {
+        "text": "Pinceis"
+      },
+      {
+        "text": "Pedras"
+      },
+      {
+        "text": "Barro"
+      },
+      {
+        "text": "Témperas"
+      }
+    ]
+  },
+  {
+    "text": "Quén fixo os petroglifos?",
+    "answer": {
+      "text": "Os homes prehistóricos"
+    },
+    "answers": [
+      {
+        "text": "Os romanos"
+      },
+      {
+        "text": "La lluvia"
+      },
+      {
+        "text": "Animais"
+      },
+      {
+        "text": "Os homes prehistóricos"
+      }
+    ]
+  },
+  {
+    "text": "Cando acaba a prehistoria?",
+    "answer": {
+      "text": "Coa invención da escritura"
+    },
+    "answers": [
+      {
+        "text": "Coa invención da escritura"
+      },
+      {
+        "text": "No ano 0"
+      },
+      {
+        "text": "Con la aparición de los dinosaurios"
+      },
+      {
+        "text": "Coa invención da roda"
+      }
+    ]
+  }
+]

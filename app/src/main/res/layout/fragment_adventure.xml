@@ -1,0 +1,195 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="org.terrasdepontevedra.petra.ui.adventure.AdventureFragment"
+    tools:ignore="MissingPrefix">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_adventure" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7e000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_adventure_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:paddingTop="80dp"
+            android:src="@drawable/spiral"
+            android:contentDescription="@string/icon" />
+
+        <ScrollView
+            android:layout_marginTop="36dp"
+            android:layout_below="@id/image_adventure_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:context="org.terrasdepontevedra.petra.ui.adventure.AdventureFragment"
+                tools:ignore="MissingPrefix">
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:id="@+id/btn_quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cylinder_white"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/text_quiz"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_toStartOf="@+id/image_adventure_arrow"
+                        android:text="@string/quiz"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_quiz"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_toStartOf="@+id/image_adventure_arrow"
+                        android:text="@string/quiz_description" />
+
+                    <ImageView
+                        android:id="@+id/image_adventure_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="@string/icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_yincana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cylinder_white"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/text_yincana"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_toStartOf="@+id/image_adventure_arrow_2"
+                        android:text="@string/yincana"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_yincana"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_toStartOf="@+id/image_adventure_arrow_2"
+                        android:text="@string/yincana_description" />
+
+                    <ImageView
+                        android:id="@+id/image_adventure_arrow_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="@string/icon" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cylinder_white"
+                    android:minHeight="40dp">
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/text_score"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_toStartOf="@+id/image_adventure_arrow_3"
+                        android:text="@string/score"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/text_score"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/image_adventure_arrow_3"
+                        android:text="@string/score_description" />
+
+                    <ImageView
+                        android:id="@+id/image_adventure_arrow_3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="@string/icon" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a5000000"
+    tools:context="org.terrasdepontevedra.petra.ui.gallery.GalleryActivity">
+
+    <include layout="@layout/content_gallery"/>
+
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:tint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="15dp"
+        android:background="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/ic_close"
+        android:contentDescription="@string/srn_drawer_close"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,102 @@
+[
+  {
+    "text": "What does Greek gliphos word mean?",
+    "answer": {
+      "text": "Engraving"
+    },
+    "answers": [
+      {
+        "text": "Stone"
+      },
+      {
+        "text": "Engraving"
+      },
+      {
+        "text": "Drawing"
+      },
+      {
+        "text": "Bird"
+      }
+    ]
+  },
+  {
+    "text": "When humans are engraved in the scenes, what do they usually do in the scenes?",
+    "answer": {
+      "text": "Hunting"
+    },
+    "answers": [
+      {
+        "text": "Gathering"
+      },
+      {
+        "text": "Staying put"
+      },
+      {
+        "text": "Building"
+      },
+      {
+        "text": "Hunting"
+      }
+    ]
+  },
+  {
+    "text": "What type of stone is the most common in the province of Pontevedra?",
+    "answer": {
+      "text": "Granite"
+    },
+    "answers": [
+      {
+        "text": "Granite"
+      },
+      {
+        "text": "Quartz"
+      },
+      {
+        "text": "Limestone"
+      },
+      {
+        "text": "Marble"
+      }
+    ]
+  },
+  {
+    "text": "What should be done before a petroglyph?",
+    "answer": {
+      "text": "To observe it"
+    },
+    "answers": [
+      {
+        "text": "To engrave more symbols"
+      },
+      {
+        "text": "To step on it"
+      },
+      {
+        "text": "To paint it"
+      },
+      {
+        "text": "To observe it"
+      }
+    ]
+  },
+  {
+    "text": "What are concentric circles?",
+    "answer": {
+      "text": "Circles with the same center"
+    },
+    "answers": [
+      {
+        "text": "Circles that crosses each other"
+      },
+      {
+        "text": "Circles with the same center"
+      },
+      {
+        "text": "Circles of the same size"
+      },
+      {
+        "text": "Non-linear circles"
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "text": "Qué é máis antigo, a idade de bronce ou a de ferro?",
+    "answer": {
+      "text": "Idade de Bronce"
+    },
+    "answers": [
+      {
+        "text": "Idade de Ferro"
+      },
+      {
+        "text": "Idade de Bronce"
+      },
+      {
+        "text": "Foron á vez"
+      },
+      {
+        "text": "Ningunha"
+      }
+    ]
+  },
+  {
+    "text": "Cal é a forma xeométrica máis usual nos petroglifos?",
+    "answer": {
+      "text": "Círculo"
+    },
+    "answers": [
+      {
+        "text": "Pentágono"
+      },
+      {
+        "text": "Triángulo"
+      },
+      {
+        "text": "Esfera"
+      },
+      {
+        "text": "Círculo"
+      }
+    ]
+  },
+  {
+    "text": "Os humanos, cando se volveron sedentarios?",
+    "answer": {
+      "text": "O Neolítico"
+    },
+    "answers": [
+      {
+        "text": "O Neolítico"
+      },
+      {
+        "text": "O Paleolítico"
+      },
+      {
+        "text": "A idade Antiga"
+      },
+      {
+        "text": "O romanticismo"
+      }
+    ]
+  },
+  {
+    "text": "A qué chamamos cazoletas?",
+    "answer": {
+      "text": "Ocos na rocha"
+    },
+    "answers": [
+      {
+        "text": "Ocos na rocha"
+      },
+      {
+        "text": "Lugar onde se cociñaba"
+      },
+      {
+        "text": "Marcas con forma de C"
+      },
+      {
+        "text": "Lugar onde se facía lume"
+      }
+    ]
+  },
+
+  {
+    "text": "Que etapa é máis longa?",
+    "answer": {
+      "text": "A Prehistoria"
+    },
+    "answers": [
+      {
+        "text": "A Prehistoria"
+      },
+      {
+        "text": "A Idade Antiga"
+      },
+      {
+        "text": "A Idade Media"
+      },
+      {
+        "text": "A Idade Moderna"
+      }
+    ]
+  }
+]

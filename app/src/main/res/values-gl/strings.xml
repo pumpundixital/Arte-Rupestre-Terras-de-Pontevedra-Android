@@ -1,0 +1,146 @@
+<resources>
+
+
+
+    <string name="notification_download_map_title">Descarga mapa Pontevedra</string>
+    <string name="notification_download_map_description">Descargando…</string>
+    <string name="message_error_not_internet_conection">Non hai conexión a Internet</string>
+    <string name="message_error_empty_view">Non se atoparon resultados.</string>
+    <string name="message_error_some_error_occur">Ocorreu un erro.</string>
+    <string name="permission_location_rationale">Para poder empezar a Yincana preme no permiso de localización.</string>
+
+    <string name="description">Descrición</string>
+    <string name="schedule">Horario</string>
+    <string name="email">Email</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Enderezo</string>
+    <string name="quiz">Quiz</string>
+    <string name="yincana">Yincana</string>
+    <string name="score">O meu Zurrón</string>
+    <string name="action_back">Atrás</string>
+    <string name="action_next">Seguinte</string>
+    <string name="action_finish">Rematar</string>
+    <string name="button_allow">Aceptar</string>
+    <string name="button_deny">Cancelar</string>
+
+    <string name="see_route">Ver petroglifos</string>
+    <string name="download_map">Descargar mapa</string>
+    <string name="download_content">Descargar contido</string>
+    <string name="see_more">Ver máis</string>
+    <string name="see_map">Ver no mapa</string>
+    <string name="activate_location">Activar localización</string>
+    <string name="go_to_settings">Ir aos axustes </string>
+
+    <string name="wizard_title_1">Arte Rupestre</string>
+    <string name="wizard_title_2">Petroglifos</string>
+    <string name="wizard_title_3">Tradición</string>
+    <string name="wizard_title_4">Idade</string>
+    <string name="wizard_paragraph_1">Poucas terras conservan tal abundancia de vestixios da Prehistoria como as de Pontevedra. Desde o Neolítico e o Megalítico ate os tempos castrenxes e os inicios da ocupación romana. A oferta cultural e patrimonial deste espazo hai que escribila con maiúsculas cando estemos a falar da Arte Rupestre.</string>
+    <string name="wizard_paragraph_2">Son múltiples os petróglifos que podemos atopar nos montes de Campo Lameiro, Cerdedo-Cotobade, Marín, Poio, Ponte Caldelas, Vilaboa, A Lama e Barro; ademáis das mámoas e os castros que atoparemos neste territorio.</string>
+    <string name="wizard_paragraph_3">A presenza destes vestixios favoreceu paralelamente a transmisión dunha rica tradición popular asociada ás pegadas do pasado que veu en darnos unha serie de mitos e lendas que chegan ate os nosos días; como a lenda que fai a Teucro (un dos heroes da guerra de Troia) o fundador da Cidade de Pontevedra.</string>
+    <string name="wizard_paragraph_4">A Arte Rupestre é un fenómeno que abarca varios milenios de duración. O principal conxunto de grabados galegos xerouse durante os milenios III e II a.C. en na idade de Bronce.</string>
+
+    <string name="wizard_title_5">Que son os petroglifos?</string>
+    <string name="wizard_paragraph_5">Os petróglifos son gravados na pedra ao aire libre. Nalgúns se representa a natureza con cabalos, serpes, cervos e tamén escenas de caza. Noutros hai representacións xeométricas como labirintos, espirais e  cazoletas.Queredes coñecer as mellores obras de Terras de Pontevedra? Vinde comigo.</string>
+
+
+
+    <string name="me">Eu</string>
+    <string name="help_petra_1">Ola.</string>
+    <string name="help_petra_5">Qué tal estás?</string>
+    <string name="help_petra_6">Moi ben, que me recomendas para andar entre petróglifos?</string>
+    <string name="help_petra_7">Cando decidas pasear por estes lugares nos que os nosos antepasados deixaron a súa arte debes lembrar:</string>
+    <string name="help_petra_8">Tocar ou pisar os gravados axudan a acelerar a súa erosión, polo que perderanse vestixios de miles de séculos da nosa historia.</string>
+    <string name="help_petra_9">Aínda que non apreciedes ben os petróglifos, non debedes remarcar os gravados, xa que as pinturas ou tintas axudarían á súa erosión e á destrución dos deseños</string>
+    <string name="help_petra_10">Que podo facer para evitalo?</string>
+    <string name="help_petra_11">Durante a visita, utilizade os carreiros e as plataformas habilitadas.</string>
+    <string name="help_petra_12">Respetade as árbores e a vexetación existente.</string>
+    <string name="help_petra_13">Levade convosco o lixo e os outros obxectos que poidan danar a contorna, e depositádeos nos lugares adecuados.</string>
+    <string name="help_petra_14">De acordo.</string>
+    <string name="help_petra_15">Cando é o mellor momento para ver os petroglifos?</string>
+    <string name="help_petra_16">A visita será máis gratificante coa luz do amencer ou do ocaso, debido a que esta fai resaltar os surcos nas superficies rochosas e permite unha mellor visualización dos motivos.</string>
+    <string name="help_petra_17">Os petroglifos son de fácil acceso?</string>
+    <string name="help_petra_18">Aínda que algunhas rutas dispoñen de carreiros e plataformas para a observación dos petróglifos, a maioría están situados en zonas de monte polo que vos recomendo facer a visita con roupa cómoda e calzado pechado.</string>
+    <string name="help_petra_19">Moitas grazas, Petra.</string>
+    <string name="help_petra_20">Gozade da visita.</string>
+
+    <string name="petra_message_main">Poderás atopar unha emocionante aventura no menú da aplicación. ¿Estás preparado?</string>
+    <string name="yes">Si</string>
+    <string name="go_to_place">Ir alí</string>
+    <string name="see_more_center">Ver Centro</string>
+    <string name="see_more_itinerary">Ver Área</string>
+    <string name="language">Lingua</string>
+    <string name="download_content_description">Podes descargar todo o contido para usar esta app sen necesidade de Internet.</string>
+    <string name="download_map_description">Asegúrate de ter unha conexión wifi. A descarga de mapas pode durar varios minutos.</string>
+    <string name="petra_tips">Consellos de Petra</string>
+    <string name="petra_message_main_filter">Aquí poderas filtrar por itinerario.</string>
+    <string name="petra_message_gallery_full_screen">Toca para ampliar a imaxe.</string>
+    <string name="petra_message_menu_horizontal">Aquí poderás compartir.</string>
+    <string name="action_settings">Axustes</string>
+    <string name="site">Emprazamento</string>
+    <string name="access">Acceso</string>
+    <string name="morphology">Morfoloxía</string>
+    <string name="synopsis">Sinopse</string>
+    <string name="gallery">Galería</string>
+    <string name="notification_download_content_title">Descarga de contido</string>
+    <string name="must_accept_storage_permission_to_donwload_content">Debes aceptar o permiso de almacenamento para descargar o contido.</string>
+    <string name="must_accept_storage_permission_to_donwload_content_in_settings">Debe aceptar o permiso de almacenamento para descargar o contido na configuración.</string>
+    <string name="press_again">Pulsa otra vez para saír</string>
+    <string name="share">Compartir</string>
+    <string name="see_on_web">Ver na Web</string>
+    <string name="can_see">Podes visitar o %1$s en: %2$s</string>
+    <string name="visit_the">Visita o %1$s en: %2$s</string>
+    <string name="score_description">Mergúllate na aventura e desbloquea todos os logros</string>
+    <string name="yincana_description">Comeza a túa aventura e descubre todos os petroglifos</string>
+    <string name="quiz_description">Queres comprobar o que sabes sobre os petroglifos?</string>
+    <string name="see_all">Ver todos</string>
+    <string name="select_quiz">Elixe un quiz:</string>
+    <string name="continue_">Continuar</string>
+    <string name="results">Resultado:</string>
+    <string name="downloaded_map">Mapa descargado</string>
+    <string name="help_yincana_search">Mantén pulsado o botón cando estés preto dun petroglifo.</string>
+    <string name="yincana_action">Comprobar posición</string>
+    <string name="completed_achievement">Logro completado!</string>
+    <string name="donwloaded_content">Contido descargado</string>
+    <string name="there_was_an_error_active_permissions">Houbo un erro, activa os permisos</string>
+
+    <string name="wizard_title_1_yincana">Cazar petróglifos</string>
+    <string name="wizard_desc_1_yincana">Iso é o que che propoñemos nesta yincana, coleccionar petróglifos. Para iso debes visitalos, coñecelos e gardalos no teu zurrón</string>
+
+
+    <string name="wizard_title_2_yincana">Como funciona?</string>
+    <string name="wizard_desc_2_yincana">Moi fácil, cada vez que visites un petróglifo ou completes un Quiz descubrirás unha carta. Cantas máis descubras máis poderes terás. Poderás ser o sabio da tribo.</string>
+
+    <string name="wizard_title_3_yincana">Que debo facer?</string>
+    <string name="wizard_desc_3_yincana">Empeza polos Quizes (os pequenos exames sobre Arte Rupestre), será como o teu ensino primario. Continúa visitando Petróglifos, cando o teléfono detecte que visitaches un abrirache unha carta.</string>
+
+    <string name="wizard_title_4_yincana">Adiante!</string>
+    <string name="wizard_desc_4_yincana">Non deixes de visitar os Centros de Interpretación e o máis importante: goza da Arte Rupestre, un dos grandes vestixios do noso pasado.</string>
+
+    <string name="must_accept_storage_permission_to_listen_audio">Debe aceptar permiso de almacenamento para escoitar audio</string>
+    <string name="must_accept_storage_permission_to_listen_audio_in_settings">Debe aceptar o permiso de almacenamento para escoitar audio na configuración</string>
+    <string name="see_results">Resultados</string>
+    <string name="retry">Reintentar</string>
+    <string name="send_mail">Enviar correo</string>
+    <string name="help_petra_2">Ola! Chámome Petra e son artista na Idade do Bronce.</string>
+    <string name="help_petra_3">Encántame traballar a pedra facendo petróglifos.</string>
+    <string name="help_petra_4">Vivo entre os ríos Verdugo e Lérez, nun paraíso chamado TERRAS DE PONTEVEDRA.</string>
+    <string name="accommodations">Onde durmir</string>
+    <string name="accommodations_description">A oferta hostaleira de Terras de Pontevedra permite a estancia para todos os orzamentos cunha das mellores relacións calidade prezo de Galicia.</string>
+    <string name="food">Onde comer</string>
+    <string name="food_description">O patrimonio gastronómico de Terras de Pontevedra convida o visitante a degustar todo tipo de manxares. Descobre todos estes segredos.</string>
+    <string name="what_to_see">Que ver</string>
+    <string name="what_to_see_description">Descobre os lugares e momentos irrepetibles que non debes perderche na túa viaxe.</string>
+    <string name="how_to_travel">Como viaxar</string>
+    <string name="how_to_travel_description">Información para chegar ata Terras de Pontevedra, en coche, en transporte público, en avión ou tren…</string>
+    <string name="url_accommodations">http://www.terrasdepontevedra.org/gl/onde-durmir.html</string>
+    <string name="url_food">http://www.terrasdepontevedra.org/gl/onde-comer-restaurantes.html</string>
+    <string name="url_what_to_see">http://www.terrasdepontevedra.org/gl/visitar-pontevedra.html</string>
+    <string name="url_how_to_travel">http://www.terrasdepontevedra.org/gl/contacto.html</string>
+
+    <string name="dialog_title_scores">Ben!</string>
+    <string name="dialog_content_scores">Superaches correctamente unha proba. Continúa para ser o sabio da tribo.</string>
+    <string name="notification_enter_location">Quente quente!</string>
+    <string name="show_bag">Abrir meu zurrón</string>
+
+</resources>

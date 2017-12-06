@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <co.mobiwise.materialintro.bubble.LeBubbleTextView
+        android:id="@+id/textview_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:bubbleArrowDirection="bottom"
+        app:bubbleBackgroundColor="@color/white"
+        app:bubbleTextColor="@android:color/black"
+        app:bubbleTextSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/petra"/>
+
+
+</RelativeLayout>

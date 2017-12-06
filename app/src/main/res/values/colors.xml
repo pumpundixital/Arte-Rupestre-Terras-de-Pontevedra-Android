@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue_light</color>
+    <color name="colorPrimaryDark">@color/blue_dark</color>
+
+    <color name="blue_dark">#33a2d1</color>
+
+    <color name="blue_dark_alpha">#7933a2d1</color>
+
+    <color name="blue_light">#92d5e8</color>
+
+    <color name="black">#696969</color>
+    <color name="white">#E7E7E7</color>
+    <color name="white_light">#f2f2f2</color>
+
+    <color name="grey_dark">#9a9a9b</color>
+    <color name="grey_mid">#c9cbcc</color>
+    <color name="grey_light">#e7e7e7</color>
+
+</resources>

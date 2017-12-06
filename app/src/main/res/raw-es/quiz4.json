@@ -1,0 +1,102 @@
+[
+  {
+    "text": "¿Por qué los hombres prehistóricos no escribían palabras?",
+    "answer": {
+      "text": "Porque no se había inventado la escritura"
+    },
+    "answers": [
+      {
+        "text": "Escribían, pero se ha borrado"
+      },
+      {
+        "text": "No tenían lenguaje"
+      },
+      {
+        "text": "Porque no se había inventado la escritura"
+      },
+      {
+        "text": "No tenían nada que decir"
+      }
+    ]
+  },
+  {
+    "text": "¿Por qué, a veces, es tan complicado ver los petroglifos?",
+    "answer": {
+      "text": "Porque están erosionados por el paso del tiempo"
+    },
+    "answers": [
+      {
+        "text": "Porque no los grabaron con mucha fuerza"
+      },
+      {
+        "text": "Porque están erosionados por el paso del tiempo"
+      },
+      {
+        "text": "Porque están a ras de suelo"
+      },
+      {
+        "text": "Porque no tienen colores"
+      }
+    ]
+  },
+  {
+    "text": "¿En qué zonas de Galicia aparecen más petroglifos?",
+    "answer": {
+      "text": "En las costas"
+    },
+    "answers": [
+      {
+        "text": "En las costas"
+      },
+      {
+        "text": "En las montañas"
+      },
+      {
+        "text": "En los áticos"
+      },
+      {
+        "text": "En los ríos"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuándo acabó la prehistoria?",
+    "answer": {
+      "text": "Sobre el 3.300 a.C."
+    },
+    "answers": [
+      {
+        "text": "Sobre el 100 a.C"
+      },
+      {
+        "text": "Sobre el 3.300 a.C."
+      },
+      {
+        "text": "El 12 de Octubre de 1492"
+      },
+      {
+        "text": "El martes"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuantos caminos hay en los laberintos atlánticos?",
+    "answer": {
+      "text": "Uno"
+    },
+    "answers": [
+      {
+        "text": "Uno"
+      },
+      {
+        "text": "Dos"
+      },
+      {
+        "text": "Tres"
+      },
+      {
+        "text": "Cuatro"
+      }
+    ]
+  }
+]
