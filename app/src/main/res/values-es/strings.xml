@@ -140,6 +140,7 @@
     <string name="dialog_content_scores">Has superado correctamente una prueba. Continúa para convertirte en el sabio de la tribu.</string>
     <string name="notification_enter_location">Caliente caliente!</string>
     <string name="show_bag">Abrir mi zurrón</string>
+    <string name="allow_location_permissions">Permitir ubicación</string>
 
 
 </resources>

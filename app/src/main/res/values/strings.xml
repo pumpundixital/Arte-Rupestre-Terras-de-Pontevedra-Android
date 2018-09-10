@@ -167,4 +167,5 @@
     <string name="dialog_content_scores">Challenge completed. Continue to become the wise man of the tribe.</string>
     <string name="notification_enter_location">You are near!</string>
     <string name="show_bag">Open my bag</string>
+    <string name="allow_location_permissions">Permitir ubicación</string>
 </resources>

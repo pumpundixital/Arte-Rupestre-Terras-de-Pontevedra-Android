@@ -142,5 +142,6 @@
     <string name="dialog_content_scores">Superaches correctamente unha proba. Continúa para ser o sabio da tribo.</string>
     <string name="notification_enter_location">Quente quente!</string>
     <string name="show_bag">Abrir meu zurrón</string>
+    <string name="allow_location_permissions">Permitir ubicación</string>
 
 </resources>

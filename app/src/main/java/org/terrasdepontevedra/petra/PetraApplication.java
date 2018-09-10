@@ -9,6 +9,7 @@ import com.mapbox.mapboxsdk.Mapbox;
 
 import org.greenrobot.eventbus.EventBus;
 import org.terrasdepontevedra.petra.data.service.DownloadResultReceiver;
+import org.terrasdepontevedra.petra.data.walk.WalkApi;
 import org.terrasdepontevedra.petra.di.component.ApplicationComponent;
 import org.terrasdepontevedra.petra.di.component.DaggerApplicationComponent;
 import org.terrasdepontevedra.petra.di.module.ApplicationModule;
@@ -19,6 +20,8 @@ import org.terrasdepontevedra.petra.util.Constants;
 
 import javax.inject.Inject;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 import timber.log.Timber;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
@@ -29,6 +32,8 @@ public class PetraApplication extends Application implements DownloadResultRecei
 
     private DownloadResultReceiver mReceiver;
     private GoogleApiClient mGoogleApiClient;
+    private  WalkApi api;
+    private static PetraApplication instance;
 
     private static ApplicationComponent sApplicationComponent;
 
@@ -59,6 +64,14 @@ public class PetraApplication extends Application implements DownloadResultRecei
         initReceiver();
         initTimber();
         initCalligraphy();
+    }
+
+    public static PetraApplication getApp() {
+        return instance;
+    }
+
+    public WalkApi getApi(){
+        return api;
     }
 
     @Override
@@ -105,5 +118,13 @@ public class PetraApplication extends Application implements DownloadResultRecei
 
     public void setGoogleApiClient(GoogleApiClient googleApiClient) {
         this.mGoogleApiClient = googleApiClient;
+    }
+
+    private void initRetrofitWalk() {
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(WalkApi.API_URL)
+                .addConverterFactory(GsonConverterFactory.create()).build();
+        api = retrofit.create(WalkApi.class);
     }
 }

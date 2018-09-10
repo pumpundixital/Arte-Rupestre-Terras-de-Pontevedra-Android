@@ -1,0 +1,8 @@
+package org.terrasdepontevedra.petra.ui.walk.base;
+
+public interface BasePresenter<T extends BaseView>{
+
+    void attachView(T view);
+
+    void detachView();
+}

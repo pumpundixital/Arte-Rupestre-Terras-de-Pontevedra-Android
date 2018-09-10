@@ -29,6 +29,11 @@ public class Constants {
 
     public static final String ARG_SHOW_DIALOG= "ARG_SHOW_DIALOG";
 
+    public static final String ARG_ITINERARY_SLUG = "ARG_ITINERARY_SLUG";
+    public static final String ARG_ITINERARY_ID = "ARG_ITINERARY_ID";
+    public static final String ARG_PLACES_LIST = "ARG_PLACES_LIST";
+    public static final String ARG_ITINERARY = "ARG_ITINERARY";
+
 
     public static final int RESULT_PERMISSION_LOCATION = 1001;
     public static final int RESULT_QUIZ = 101;
