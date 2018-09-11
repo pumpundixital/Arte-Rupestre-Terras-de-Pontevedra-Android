@@ -71,7 +71,7 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
 
     public void getItineraryFromId(int id) {
         mView.stateLoading();
-        addSubscribe(walkApi.loadItinerary(id)
+        addSubscribe(walkApi.loadItinerary("en",id)
                 .compose(RxUtil.rxSchedulerHelper())
                 .map(Itinerary::mapper)
                 .subscribeWith(new CommonSubscriber<Itinerary>(mView) {
@@ -85,7 +85,7 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
     }
 
     private void getPlacesFromItineraryId(int itineraryId) {
-        addSubscribe(walkApi.loadPlacesRelationsByCategoryItineraryId("_wpcf_belongs_itinerario_id",itineraryId, 100)
+        addSubscribe(walkApi.loadPlacesRelationsByCategoryItineraryId("en",itineraryId, 100)
                 .compose(RxUtil.rxSchedulerHelper())
                 .map(relationDtos -> {
                     List<Relation> relations = new ArrayList<>();
@@ -100,15 +100,14 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
                         if (!relations.isEmpty()) {
                             List<Integer> ids = new ArrayList<>();
 
-                            Arrays.sort(
+                          /*  Arrays.sort(
                                     relations.toArray(),
                                     (o1, o2) -> ((Relation) o1).getOrder() > ((Relation) o2).getOrder() ? 1 : -1
-                            );
+                            );*/
 
                             for (Relation relation : relations) {
                                 ids.add(relation.getCategoryPlaceId());
                             }
-
 
                             getPlacesFromIds(ids);
                         } else {
@@ -121,7 +120,7 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
 
 
     private void getPlacesFromIds(List<Integer> placesIds) {
-        addSubscribe(walkApi.loadPlacesFromIds( generateUrlFrom(placesIds))
+        addSubscribe(walkApi.loadPlacesFromIds( "en",generateUrlFrom(placesIds))
                 .compose(RxUtil.rxSchedulerHelper())
                 .map(placeDtos -> {
                     List<Place> places = new ArrayList<>();

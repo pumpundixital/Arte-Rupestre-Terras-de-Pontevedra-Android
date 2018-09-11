@@ -1,385 +1,265 @@
 package org.terrasdepontevedra.petra.domain.model.walk;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class RelationDto implements Serializable{
 
 
-    private int id;
-    private String date;
-    private String date_gmt;
-    private GuidBean guid;
-    private String modified;
-    private String modified_gmt;
-    private String slug;
-    private String status;
-    private String type;
-    private String link;
-    private TitleBean title;
-    private ContentBean content;
-    private String template;
-    private RestApiEnablerBean rest_api_enabler;
-    private LinksBean _links;
-    private List<String> _wpcf_belongs_itinerario_id;
-    private List<String> _wpcf_belongs_lugar_id;
-    @com.google.gson.annotations.SerializedName("wpcf-orden")
-    private List<String> wpcforden;
+    /**
+     * ID : 1035
+     * post_author : 1
+     * post_date : 2018-09-10 10:28:08
+     * post_date_gmt : 2018-09-10 10:28:08
+     * post_content : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     * post_title : Lugar 1
+     * post_excerpt : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+     * post_status : publish
+     * comment_status : closed
+     * ping_status : closed
+     * post_password :
+     * post_name : dsdsds
+     * to_ping :
+     * pinged :
+     * post_modified : 2018-09-11 09:44:11
+     * post_modified_gmt : 2018-09-11 09:44:11
+     * post_content_filtered :
+     * post_parent : 0
+     * guid : http://app.terrasdepontevedra.org/?post_type=lugar&#038;p=1035
+     * menu_order : 0
+     * post_type : lugar
+     * post_mime_type :
+     * comment_count : 0
+     * filter : raw
+     * image_url : http://app.terrasdepontevedra.org/wp-content/uploads/2017/10/outeiro-do-cogoludo01-768x376.jpg
+     */
 
-    public int getId() {
-        return id;
+    private int ID;
+    private String post_author;
+    private String post_date;
+    private String post_date_gmt;
+    private String post_content;
+    private String post_title;
+    private String post_excerpt;
+    private String post_status;
+    private String comment_status;
+    private String ping_status;
+    private String post_password;
+    private String post_name;
+    private String to_ping;
+    private String pinged;
+    private String post_modified;
+    private String post_modified_gmt;
+    private String post_content_filtered;
+    private int post_parent;
+    private String guid;
+    private int menu_order;
+    private String post_type;
+    private String post_mime_type;
+    private String comment_count;
+    private String filter;
+    private String image_url;
+
+    public int getID() {
+        return ID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public String getDate() {
-        return date;
+    public String getPost_author() {
+        return post_author;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setPost_author(String post_author) {
+        this.post_author = post_author;
     }
 
-    public String getDate_gmt() {
-        return date_gmt;
+    public String getPost_date() {
+        return post_date;
     }
 
-    public void setDate_gmt(String date_gmt) {
-        this.date_gmt = date_gmt;
+    public void setPost_date(String post_date) {
+        this.post_date = post_date;
     }
 
-    public GuidBean getGuid() {
+    public String getPost_date_gmt() {
+        return post_date_gmt;
+    }
+
+    public void setPost_date_gmt(String post_date_gmt) {
+        this.post_date_gmt = post_date_gmt;
+    }
+
+    public String getPost_content() {
+        return post_content;
+    }
+
+    public void setPost_content(String post_content) {
+        this.post_content = post_content;
+    }
+
+    public String getPost_title() {
+        return post_title;
+    }
+
+    public void setPost_title(String post_title) {
+        this.post_title = post_title;
+    }
+
+    public String getPost_excerpt() {
+        return post_excerpt;
+    }
+
+    public void setPost_excerpt(String post_excerpt) {
+        this.post_excerpt = post_excerpt;
+    }
+
+    public String getPost_status() {
+        return post_status;
+    }
+
+    public void setPost_status(String post_status) {
+        this.post_status = post_status;
+    }
+
+    public String getComment_status() {
+        return comment_status;
+    }
+
+    public void setComment_status(String comment_status) {
+        this.comment_status = comment_status;
+    }
+
+    public String getPing_status() {
+        return ping_status;
+    }
+
+    public void setPing_status(String ping_status) {
+        this.ping_status = ping_status;
+    }
+
+    public String getPost_password() {
+        return post_password;
+    }
+
+    public void setPost_password(String post_password) {
+        this.post_password = post_password;
+    }
+
+    public String getPost_name() {
+        return post_name;
+    }
+
+    public void setPost_name(String post_name) {
+        this.post_name = post_name;
+    }
+
+    public String getTo_ping() {
+        return to_ping;
+    }
+
+    public void setTo_ping(String to_ping) {
+        this.to_ping = to_ping;
+    }
+
+    public String getPinged() {
+        return pinged;
+    }
+
+    public void setPinged(String pinged) {
+        this.pinged = pinged;
+    }
+
+    public String getPost_modified() {
+        return post_modified;
+    }
+
+    public void setPost_modified(String post_modified) {
+        this.post_modified = post_modified;
+    }
+
+    public String getPost_modified_gmt() {
+        return post_modified_gmt;
+    }
+
+    public void setPost_modified_gmt(String post_modified_gmt) {
+        this.post_modified_gmt = post_modified_gmt;
+    }
+
+    public String getPost_content_filtered() {
+        return post_content_filtered;
+    }
+
+    public void setPost_content_filtered(String post_content_filtered) {
+        this.post_content_filtered = post_content_filtered;
+    }
+
+    public int getPost_parent() {
+        return post_parent;
+    }
+
+    public void setPost_parent(int post_parent) {
+        this.post_parent = post_parent;
+    }
+
+    public String getGuid() {
         return guid;
     }
 
-    public void setGuid(GuidBean guid) {
+    public void setGuid(String guid) {
         this.guid = guid;
     }
 
-    public String getModified() {
-        return modified;
+    public int getMenu_order() {
+        return menu_order;
     }
 
-    public void setModified(String modified) {
-        this.modified = modified;
+    public void setMenu_order(int menu_order) {
+        this.menu_order = menu_order;
     }
 
-    public String getModified_gmt() {
-        return modified_gmt;
+    public String getPost_type() {
+        return post_type;
     }
 
-    public void setModified_gmt(String modified_gmt) {
-        this.modified_gmt = modified_gmt;
+    public void setPost_type(String post_type) {
+        this.post_type = post_type;
     }
 
-    public String getSlug() {
-        return slug;
+    public String getPost_mime_type() {
+        return post_mime_type;
     }
 
-    public void setSlug(String slug) {
-        this.slug = slug;
+    public void setPost_mime_type(String post_mime_type) {
+        this.post_mime_type = post_mime_type;
     }
 
-    public String getStatus() {
-        return status;
+    public String getComment_count() {
+        return comment_count;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setComment_count(String comment_count) {
+        this.comment_count = comment_count;
     }
 
-    public String getType() {
-        return type;
+    public String getFilter() {
+        return filter;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setFilter(String filter) {
+        this.filter = filter;
     }
 
-    public String getLink() {
-        return link;
+    public String getImage_url() {
+        return image_url;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
     }
 
-    public TitleBean getTitle() {
-        return title;
-    }
 
-    public void setTitle(TitleBean title) {
-        this.title = title;
-    }
 
-    public ContentBean getContent() {
-        return content;
-    }
 
-    public void setContent(ContentBean content) {
-        this.content = content;
-    }
-
-    public String getTemplate() {
-        return template;
-    }
-
-    public void setTemplate(String template) {
-        this.template = template;
-    }
-
-    public RestApiEnablerBean getRest_api_enabler() {
-        return rest_api_enabler;
-    }
-
-    public void setRest_api_enabler(RestApiEnablerBean rest_api_enabler) {
-        this.rest_api_enabler = rest_api_enabler;
-    }
-
-    public LinksBean get_links() {
-        return _links;
-    }
-
-    public void set_links(LinksBean _links) {
-        this._links = _links;
-    }
-
-    public List<String> get_wpcf_belongs_itinerario_id() {
-        return _wpcf_belongs_itinerario_id;
-    }
-
-    public void set_wpcf_belongs_itinerario_id(List<String> _wpcf_belongs_itinerario_id) {
-        this._wpcf_belongs_itinerario_id = _wpcf_belongs_itinerario_id;
-    }
-
-    public List<String> get_wpcf_belongs_lugar_id() {
-        return _wpcf_belongs_lugar_id;
-    }
-
-    public void set_wpcf_belongs_lugar_id(List<String> _wpcf_belongs_lugar_id) {
-        this._wpcf_belongs_lugar_id = _wpcf_belongs_lugar_id;
-    }
-
-    public List<String> getWpcforden() {
-        return wpcforden;
-    }
-
-    public void setWpcforden(List<String> wpcforden) {
-        this.wpcforden = wpcforden;
-    }
-
-    public static class GuidBean {
-        /**
-         * rendered : https://vigoexperience.com/?post_type=relacion&#038;p=252
-         */
-
-        private String rendered;
-
-        public String getRendered() {
-            return rendered;
-        }
-
-        public void setRendered(String rendered) {
-            this.rendered = rendered;
-        }
-    }
-
-    public static class TitleBean {
-        /**
-         * rendered : relacion 252
-         */
-
-        private String rendered;
-
-        public String getRendered() {
-            return rendered;
-        }
-
-        public void setRendered(String rendered) {
-            this.rendered = rendered;
-        }
-    }
-
-    public static class ContentBean {
-        /**
-         * rendered :
-         * protected : false
-         */
-
-        private String rendered;
-        @com.google.gson.annotations.SerializedName("protected")
-        private boolean protectedX;
-
-        public String getRendered() {
-            return rendered;
-        }
-
-        public void setRendered(String rendered) {
-            this.rendered = rendered;
-        }
-
-        public boolean isProtectedX() {
-            return protectedX;
-        }
-
-        public void setProtectedX(boolean protectedX) {
-            this.protectedX = protectedX;
-        }
-    }
-
-    public static class RestApiEnablerBean {
-        /**
-         * _wpcf_belongs_itinerario_id : 316
-         * _wpcf_belongs_lugar_id : 299
-         * wpcf-orden : 6
-         */
-
-        private String _wpcf_belongs_itinerario_id;
-        private String _wpcf_belongs_lugar_id;
-        @com.google.gson.annotations.SerializedName("wpcf-orden")
-        private String wpcforden;
-
-        public String get_wpcf_belongs_itinerario_id() {
-            return _wpcf_belongs_itinerario_id;
-        }
-
-        public void set_wpcf_belongs_itinerario_id(String _wpcf_belongs_itinerario_id) {
-            this._wpcf_belongs_itinerario_id = _wpcf_belongs_itinerario_id;
-        }
-
-        public String get_wpcf_belongs_lugar_id() {
-            return _wpcf_belongs_lugar_id;
-        }
-
-        public void set_wpcf_belongs_lugar_id(String _wpcf_belongs_lugar_id) {
-            this._wpcf_belongs_lugar_id = _wpcf_belongs_lugar_id;
-        }
-
-        public String getWpcforden() {
-            return wpcforden;
-        }
-
-        public void setWpcforden(String wpcforden) {
-            this.wpcforden = wpcforden;
-        }
-    }
-
-    // FIXME generate failure  field _$WpAttachment285
-    public static class LinksBean {
-        private List<SelfBean> self;
-        private List<CollectionBean> collection;
-        private List<AboutBean> about;
-        private List<CuriesBean> curies;
-
-        public List<SelfBean> getSelf() {
-            return self;
-        }
-
-        public void setSelf(List<SelfBean> self) {
-            this.self = self;
-        }
-
-        public List<CollectionBean> getCollection() {
-            return collection;
-        }
-
-        public void setCollection(List<CollectionBean> collection) {
-            this.collection = collection;
-        }
-
-        public List<AboutBean> getAbout() {
-            return about;
-        }
-
-        public void setAbout(List<AboutBean> about) {
-            this.about = about;
-        }
-
-        public static class SelfBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/relacion/252
-             */
-
-            private String href;
-
-            public String getHref() {
-                return href;
-            }
-
-            public void setHref(String href) {
-                this.href = href;
-            }
-        }
-
-        public static class CollectionBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/relacion
-             */
-
-            private String href;
-
-            public String getHref() {
-                return href;
-            }
-
-            public void setHref(String href) {
-                this.href = href;
-            }
-        }
-
-        public static class AboutBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/types/relacion
-             */
-
-            private String href;
-
-            public String getHref() {
-                return href;
-            }
-
-            public void setHref(String href) {
-                this.href = href;
-            }
-        }
-
-
-        public static class CuriesBean {
-            /**
-             * name : wp
-             * href : https://api.w.org/{rel}
-             * templated : true
-             */
-
-            private String name;
-            private String href;
-            private boolean templated;
-
-            public String getName() {
-                return name;
-            }
-
-            public void setName(String name) {
-                this.name = name;
-            }
-
-            public String getHref() {
-                return href;
-            }
-
-            public void setHref(String href) {
-                this.href = href;
-            }
-
-            public boolean isTemplated() {
-                return templated;
-            }
-
-            public void setTemplated(boolean templated) {
-                this.templated = templated;
-            }
-        }
-    }
 }

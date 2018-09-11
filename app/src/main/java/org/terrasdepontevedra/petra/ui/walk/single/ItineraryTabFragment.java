@@ -24,7 +24,7 @@ import me.yokeyword.fragmentation.SupportFragment;
  * Created by pablopumpun on 22/9/17.
  */
 
-public class ItineraryTabFragment extends SimpleFragment {
+public class ItineraryTabFragment extends SimpleFragment implements ItineraryContract.View {
 
     public static final int FIRST = 0;
     public static final int SECOND = 1;
@@ -76,6 +76,7 @@ public class ItineraryTabFragment extends SimpleFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter = new ItineraryPresenter();
+        mPresenter.attachView(this);
         mItinerarySlug = getArguments().getString(Constants.ARG_ITINERARY_SLUG);
         mItineraryId = getArguments().getInt(Constants.ARG_ITINERARY_ID);
     }
@@ -114,6 +115,21 @@ public class ItineraryTabFragment extends SimpleFragment {
         });
     }
 
+    @Override
+    public void stateError() {
+
+    }
+
+    @Override
+    public void stateEmpty() {
+
+    }
+
+    @Override
+    public void stateLoading() {
+
+    }
+
     public void stateMain() {
         SupportFragment firstFragment = findChildFragment(ItineraryDetailFragment.class);
         if (firstFragment == null) {
@@ -129,12 +145,20 @@ public class ItineraryTabFragment extends SimpleFragment {
         }
     }
 
+    @Override
+    public void stateErrorNetWork() {
 
+    }
 
 
     public void onDataLoaded(Itinerary currentItinerary, List<Place> placesList) {
         mItinerary = currentItinerary;
         mPlacesList = placesList;
         stateMain();
+    }
+
+    @Override
+    public void showContent(Itinerary itinerary) {
+
     }
 }

@@ -42,8 +42,6 @@ public class WalksListFragment extends Fragment implements WalksListMvpView {
                              Bundle savedInstanceState) {
         View v= inflater.inflate(R.layout.fragment_walks_list, container, false);
         unbinder = ButterKnife.bind(this,v);
-        walksListPresenter = new WalksListPresenter();
-        walksListPresenter.attachView(this);
         return v;
     }
 
@@ -51,9 +49,9 @@ public class WalksListFragment extends Fragment implements WalksListMvpView {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         showLoading(true);
+        walksListPresenter = new WalksListPresenter(getContext());
+        walksListPresenter.attachView(this);
         walksListPresenter.loadWalks();
-
-
     }
 
     @Override

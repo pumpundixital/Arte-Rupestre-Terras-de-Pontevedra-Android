@@ -60,9 +60,9 @@ public class BottomBarTab extends FrameLayout {
         mTvTitle.setTextSize(18);
         mTvTitle.setTextColor(ContextCompat.getColor(context, R.color.grey_mid));
         mTvTitle.setLayoutParams(paramsTv);
-        Typeface face = Typeface.createFromAsset(context.getAssets(),
-                "fonts/walsheim_bold.ttf");
-        mTvTitle.setTypeface(face);
+        /*Typeface face = Typeface.createFromAsset(context.getAssets(),
+                "fonts/Roboto-Medium.ttf");
+        mTvTitle.setTypeface(face);*/
 
         lLContainer.addView(mTvTitle);
 

@@ -5,7 +5,6 @@ public class Relation {
 
     private int order;
     private int categoryPlaceId;
-    private int categoryItineraryId;
 
 
     public int getOrder() {
@@ -24,24 +23,11 @@ public class Relation {
         this.categoryPlaceId = categoryPlaceId;
     }
 
-    public int getCategoryItineraryId() {
-        return categoryItineraryId;
-    }
-
-    public void setCategoryItineraryId(int categoryItineraryId) {
-        this.categoryItineraryId = categoryItineraryId;
-    }
 
 
     public static Relation mapper(RelationDto relationDto){
         Relation relation = new Relation();
-        if(relationDto.get_wpcf_belongs_itinerario_id().get(0)!=null) {
-            relation.setCategoryItineraryId((Integer.parseInt(relationDto.get_wpcf_belongs_itinerario_id().get(0))));
-        }
-        if(relationDto.get_wpcf_belongs_lugar_id().get(0)!=null) {
-            relation.setCategoryPlaceId((Integer.parseInt(relationDto.get_wpcf_belongs_lugar_id().get(0))));
-        }
-        relation.setOrder(Integer.parseInt(relationDto.getWpcforden().get(0)));
+        relation.setCategoryPlaceId(relationDto.getID());
         return relation;
     }
 }

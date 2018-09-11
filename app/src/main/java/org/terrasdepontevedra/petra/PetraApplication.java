@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.mapbox.mapboxsdk.Mapbox;
 
 import org.greenrobot.eventbus.EventBus;
@@ -126,6 +127,7 @@ public class PetraApplication extends Application implements DownloadResultRecei
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(WalkApi.API_URL)
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create()).build();
         api = retrofit.create(WalkApi.class);
     }
