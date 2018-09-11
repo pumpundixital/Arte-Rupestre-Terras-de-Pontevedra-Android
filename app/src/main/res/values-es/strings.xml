@@ -141,6 +141,8 @@
     <string name="notification_enter_location">Caliente caliente!</string>
     <string name="show_bag">Abrir mi zurrón</string>
     <string name="allow_location_permissions">Permitir ubicación</string>
+    <string name="tab_1">Intro</string>
+    <string name="tab_2">Ruta</string>
 
 
 </resources>

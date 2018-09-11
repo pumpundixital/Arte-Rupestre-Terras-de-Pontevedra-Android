@@ -61,7 +61,7 @@
                     android:layout_height="75dp">
 
                     <TextView
-                        fontPath="fonts/walsheim_bold.ttf"
+                        fontPath="fonts/Roboto-Medium.ttf"
                         android:id="@+id/text_single_title"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
                         android:maxLines="2"

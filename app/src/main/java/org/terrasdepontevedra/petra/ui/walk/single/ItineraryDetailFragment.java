@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -22,6 +23,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
+import com.daimajia.slider.library.GlideApp;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapsInitializer;
@@ -125,22 +131,24 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
         setTitle();
         setDescription();
         setupToolbar();
-        /*if (mItinerary.getFeaturedImage() != null) {
-            Picasso.with(getContext())
+        if (mItinerary.getFeaturedImage() != null) {
+            GlideApp.with(getContext())
                     .load(mItinerary.getFeaturedImage().getUrlMedium())
-                    .fit()
-                    .into(mImage, new Callback() {
+                    .listener(new RequestListener<Drawable>() {
                         @Override
-                        public void onSuccess() {
+                        public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
                             getActivity().findViewById(R.id.progress_image).setVisibility(View.GONE);
+                            return false;
                         }
 
                         @Override
-                        public void onError() {
+                        public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
                             getActivity().findViewById(R.id.progress_image).setVisibility(View.GONE);
+                            return false;
                         }
-                    });
-        }*/
+                    })
+                    .into(mImage);
+        }
 
 
     }
@@ -158,9 +166,9 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
                 }
                 if (scrollRange + verticalOffset == 0) {
                     mCollapsingToolbar.setTitle(mItinerary.getTitle());
-                    final Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/walsheim_bold.ttf");
-                    mCollapsingToolbar.setCollapsedTitleTypeface(tf);
-                    mCollapsingToolbar.setExpandedTitleTypeface(tf);
+                    //final Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "fonts/walsheim_bold.ttf");
+                    //mCollapsingToolbar.setCollapsedTitleTypeface(tf);
+                    //mCollapsingToolbar.setExpandedTitleTypeface(tf);
                     isShow = true;
                 } else if (isShow) {
                     mCollapsingToolbar.setTitle(" ");//carefull there should a space between double quote otherwise it wont work
@@ -194,9 +202,9 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
                 }
                 if (scrollRange + verticalOffset == 0) {
                     mCollapsingToolbar.setTitle(mItinerary.getTitle());
-                    final Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/walsheim_bold.ttf");
-                    mCollapsingToolbar.setCollapsedTitleTypeface(tf);
-                    mCollapsingToolbar.setExpandedTitleTypeface(tf);
+                    //final Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "fonts/walsheim_bold.ttf");
+                    //mCollapsingToolbar.setCollapsedTitleTypeface(tf);
+                    //mCollapsingToolbar.setExpandedTitleTypeface(tf);
                     isShow = true;
                 } else if (isShow) {
                     mCollapsingToolbar.setTitle(" ");//carefull there should a space between double quote otherwise it wont work

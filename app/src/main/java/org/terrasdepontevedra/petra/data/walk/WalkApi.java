@@ -22,15 +22,23 @@ public interface WalkApi {
     @GET("/{language}/wp-json/wp/v2/itinerario")
     Flowable<List<ItineraryDto>> loadItineraryBySlug(@Path("language") String language, @Query("slug") String link);
 
-
     @GET("/{language}/wp-json/wp/v2/itinerario/{id}/")
     Flowable<ItineraryDto> loadItinerary(@Path("language") String language, @Path("id") int itineraryId);
+
+    @GET("/wp-json/wp/v2/itinerario/{id}/")
+    Flowable<ItineraryDto> loadItineraryEs(@Path("id") int itineraryId);
+
+    @GET("/{language}/wp-json/wp/v2/lugar")
+    Flowable<List<PlaceDto>> loadPlacesFromIds(@Path("language") String language, @Query("include") String placesIds);
+
+    @GET("/wp-json/wp/v2/lugar")
+    Flowable<List<PlaceDto>> loadPlacesFromIdsEs( @Query("include") String placesIds);
 
     @GET("/{language}/wp-json/pumpun/v1/relacion/{id}")
     Flowable<List<RelationDto>> loadPlacesRelationsByCategoryItineraryId(@Path("language") String language, @Path("id") int categoryItineraryId, @Query("per_page") int limit);
 
-    @GET("/{language}/wp-json/wp/v2/lugar")
-    Flowable<List<PlaceDto>> loadPlacesFromIds(@Path("language") String language, @Query("include") String placesIds);
+    @GET("/wp-json/pumpun/v1/relacion/{id}")
+    Flowable<List<RelationDto>> loadPlacesRelationsByCategoryItineraryIdEs(@Path("id") int categoryItineraryId, @Query("per_page") int limit);
 
     @GET("/{language}/wp-json/wp/v2/itinerario")
     Flowable<List<ItineraryDto>> loadWalks(@Path("language") String language, @Query("page") int page);

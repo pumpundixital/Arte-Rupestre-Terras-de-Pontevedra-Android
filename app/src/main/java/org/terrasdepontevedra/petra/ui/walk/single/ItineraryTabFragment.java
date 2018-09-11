@@ -75,7 +75,7 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter = new ItineraryPresenter();
+        mPresenter = new ItineraryPresenter(getContext());
         mPresenter.attachView(this);
         mItinerarySlug = getArguments().getString(Constants.ARG_ITINERARY_SLUG);
         mItineraryId = getArguments().getInt(Constants.ARG_ITINERARY_ID);
@@ -95,8 +95,8 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
     private void initView(View view) {
         mBottomBar = view.findViewById(R.id.bottomBar);
         mBottomBar
-                .addItem(new BottomBarTab(_mActivity,"tab 1"))
-                .addItem(new BottomBarTab(_mActivity, "tab 2"));
+                .addItem(new BottomBarTab(_mActivity,getString(R.string.tab_1)))
+                .addItem(new BottomBarTab(_mActivity, getString(R.string.tab_2)));
         mBottomBar.setOnTabSelectedListener(new BottomBar.OnTabSelectedListener() {
             @Override
             public void onTabSelected(int position, int prePosition) {
@@ -150,15 +150,12 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
 
     }
 
-
+    @Override
     public void onDataLoaded(Itinerary currentItinerary, List<Place> placesList) {
         mItinerary = currentItinerary;
         mPlacesList = placesList;
         stateMain();
     }
 
-    @Override
-    public void showContent(Itinerary itinerary) {
 
-    }
 }

@@ -4,6 +4,9 @@ package org.terrasdepontevedra.petra.domain.model.walk;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import timber.log.Timber;
 
 public class Itinerary extends Content implements Parcelable{
@@ -11,6 +14,8 @@ public class Itinerary extends Content implements Parcelable{
     public Itinerary(){
 
     }
+
+    List <Integer> placesIds;
 
     protected Itinerary(Parcel in) {
     }
@@ -52,6 +57,16 @@ public class Itinerary extends Content implements Parcelable{
             }
         }
 
+        if(itineraryDto.getWpcfidsdeloslugares()!=null && itineraryDto.getWpcfidsdeloslugares().get(0)!=null) {
+            String idsString = itineraryDto.getWpcfidsdeloslugares().get(0);
+            List<Integer> ids = new ArrayList<>();
+            for (int i = 0; i < idsString.split(",").length; i++) {
+                int id =Integer.parseInt(idsString.split(",")[i]);
+                ids.add(id);
+            }
+            itinerary.setPlacesIds(ids);
+        }
+
         return itinerary;
     }
 
@@ -62,5 +77,13 @@ public class Itinerary extends Content implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
+    }
+
+    public List<Integer> getPlacesIds() {
+        return placesIds;
+    }
+
+    public void setPlacesIds(List<Integer> placesIds) {
+        this.placesIds = placesIds;
     }
 }

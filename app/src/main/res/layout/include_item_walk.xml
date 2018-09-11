@@ -63,6 +63,7 @@
                     tools:ignore="MissingPrefix" />
 
                 <TextView
+                    android:padding="9dp"
                     android:id="@+id/text_item_itinerary_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

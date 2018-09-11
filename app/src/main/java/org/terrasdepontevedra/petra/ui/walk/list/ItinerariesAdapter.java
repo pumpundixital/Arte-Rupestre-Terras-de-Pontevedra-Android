@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.daimajia.slider.library.GlideApp;
 import com.google.android.gms.maps.model.LatLng;
 
 
@@ -95,7 +96,7 @@ public class ItinerariesAdapter extends RecyclerView.Adapter<ItinerariesAdapter.
         }
 
         void setupImage(String imageUrl){
-            //Picasso.with(mDiagonalImage.getContext()).load(imageUrl).into(mDiagonalImage);
+            GlideApp.with(mDiagonalImage.getContext()).load(imageUrl).into(mDiagonalImage);
         }
 
         void setMyLocation(LatLng myPos, LatLng placePos){
