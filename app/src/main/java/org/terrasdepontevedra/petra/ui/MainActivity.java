@@ -34,7 +34,6 @@ import org.terrasdepontevedra.petra.domain.pojo.ActivateFilter;
 import org.terrasdepontevedra.petra.domain.pojo.DeactivateFilter;
 import org.terrasdepontevedra.petra.domain.pojo.OpenMap;
 import org.terrasdepontevedra.petra.ui.adventure.AdventureFragment;
-import org.terrasdepontevedra.petra.ui.adventure.quiz.QuizDialog;
 import org.terrasdepontevedra.petra.ui.adventure.score.dialog.ScoreDialog;
 import org.terrasdepontevedra.petra.ui.base.BaseActivity;
 import org.terrasdepontevedra.petra.ui.center.list.CenterListFragment;
@@ -48,8 +47,8 @@ import org.terrasdepontevedra.petra.ui.map.itinerary.ItineraryMapFragment;
 import org.terrasdepontevedra.petra.ui.map.place.MapFragment;
 import org.terrasdepontevedra.petra.ui.moreInfo.MoreInfoFragment;
 import org.terrasdepontevedra.petra.ui.settings.SettingsFragment;
+import org.terrasdepontevedra.petra.ui.walk.walks.WalksListFragment;
 import org.terrasdepontevedra.petra.ui.wizard.WizardActivity;
-import org.terrasdepontevedra.petra.util.Constants;
 import org.terrasdepontevedra.petra.util.IntroConstants;
 import org.terrasdepontevedra.petra.util.interfaces.Action;
 import org.terrasdepontevedra.petra.util.services.FragmentService;
@@ -77,11 +76,12 @@ public class MainActivity extends BaseActivity
     private static final int POS_INTRO = 0;
     private static final int POS_CENTERS = 1;
     private static final int POS_ITINERARIES = 2;
-    private static final int POS_MAP = 3;
-    private static final int POS_ADVENTURE = 4;
-    private static final int POS_HELP = 5;
-    private static final int POS_MORE_INFO = 6;
-    private static final int POS_SETTINGS = 7;
+    private static final int POS_WALK = 3;
+    private static final int POS_MAP = 4;
+    private static final int POS_ADVENTURE = 5;
+    private static final int POS_HELP = 6;
+    private static final int POS_MORE_INFO = 7;
+    private static final int POS_SETTINGS = 8;
 
     @Inject
     FragmentService mFragmentService;
@@ -154,11 +154,14 @@ public class MainActivity extends BaseActivity
         mActionSparseArray.put(POS_INTRO, this::showIntro);
         mActionSparseArray.put(POS_CENTERS, this::showCenters);
         mActionSparseArray.put(POS_ITINERARIES, this::showItineraries);
+        mActionSparseArray.put(POS_WALK, this::showWalkActivity);
         mActionSparseArray.put(POS_MAP, this::showMap);
         mActionSparseArray.put(POS_ADVENTURE, this::showAdventure);
         mActionSparseArray.put(POS_HELP, this::showHelp);
         mActionSparseArray.put(POS_MORE_INFO, this::showMoreInfo);
         mActionSparseArray.put(POS_SETTINGS, this::showSettings);
+
+
     }
 
     private void showMoreInfo() {
@@ -200,6 +203,14 @@ public class MainActivity extends BaseActivity
         mItinerary = null;
         mFragments[0] = POS_SETTINGS;
         mFragmentService.replaceWithVerticalAnimation(SettingsFragment.newInstance(), mContainerFragment);
+    }
+
+    private void showWalkActivity(){
+        restoreMenuIcon();
+        mTvTitlePetra.setText(screenTitles[POS_WALK]);
+        mItinerary = null;
+        mFragments[0] = POS_WALK;
+        mFragmentService.replaceWithVerticalAnimation(WalksListFragment.newInstance(), mContainerFragment);
     }
 
     private void showMap() {
@@ -331,11 +342,13 @@ public class MainActivity extends BaseActivity
                 createItemFor(POS_INTRO),
                 createItemFor(POS_CENTERS).setChecked(true),
                 createItemFor(POS_ITINERARIES),
+                createItemFor(POS_WALK),
                 createItemFor(POS_MAP),
                 createItemFor(POS_ADVENTURE),
                 createItemFor(POS_HELP),
                 createItemFor(POS_MORE_INFO),
                 createItemFor(POS_SETTINGS)
+
         ));
         mDrawerAdapter.setListener(this);
 

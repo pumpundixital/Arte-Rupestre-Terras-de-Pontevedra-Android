@@ -51,6 +51,7 @@ public class PetraApplication extends Application implements DownloadResultRecei
         super.onCreate();
         Mapbox.getInstance(getApplicationContext(), "pk.eyJ1IjoicGFibG9wdW1wdW4iLCJhIjoiY2o4YzJoYWpsMDNwMjJxbnZtNXFsNjRvZSJ9.pJmsX3i7h4aBg2SB77Koag");
 
+        instance = this;
         sApplicationComponent =
                 DaggerApplicationComponent.builder()
                         .applicationModule(new ApplicationModule(this))
@@ -64,6 +65,7 @@ public class PetraApplication extends Application implements DownloadResultRecei
         initReceiver();
         initTimber();
         initCalligraphy();
+        initRetrofitWalk();
     }
 
     public static PetraApplication getApp() {

@@ -3,6 +3,7 @@
 
     <string name="drawer_item_centers">Centros</string>
     <string name="drawer_item_itineraries">Áreas</string>
+    <string name="drawer_item_walk">Rutas</string>
     <string name="drawer_item_intro">Introducción</string>
     <string name="drawer_item_help">Consejos</string>
     <string name="drawer_item_map">Mapa</string>

@@ -9,6 +9,8 @@ import org.terrasdepontevedra.petra.domain.model.walk.RelationDto;
 import java.util.List;
 
 import io.reactivex.Flowable;
+import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
@@ -29,5 +31,9 @@ public interface WalkApi {
 
     @GET("lugar")
     Flowable<List<PlaceDto>> loadPlacesFromIds(@Query("include") String placesIds);
+
+    @GET("/{language}/wp-json/wp/v2/itinerario")
+    Call<List<ItineraryDto>> loadWalks(@Path("language") String language, @Query("page") int page);
+
 
 }
