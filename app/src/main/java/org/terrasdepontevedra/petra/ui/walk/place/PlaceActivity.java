@@ -3,6 +3,7 @@ package org.terrasdepontevedra.petra.ui.walk.place;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -32,9 +33,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.terrasdepontevedra.petra.R;
 import org.terrasdepontevedra.petra.domain.model.walk.Place;
+import org.terrasdepontevedra.petra.ui.gallery.GalleryActivity;
 import org.terrasdepontevedra.petra.util.AndroidUtils;
 import org.terrasdepontevedra.petra.util.Constants;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 import butterknife.BindView;
@@ -138,6 +143,8 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle("");
+        Drawable backArrow = getResources().getDrawable(R.drawable.ic_back);
+        actionBar.setHomeAsUpIndicator(backArrow);
         AndroidUtils.systemBarLolipop(this);
         mToolbar.setNavigationOnClickListener(v -> finish());
         setImageToolbar();
@@ -176,12 +183,6 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
         }
     }
 
-    private void openPlaceInMap() {
-        /*Intent intent = new Intent(PlaceActivity.this, MapActivity.class);
-        intent.putExtra(BUNDLE_PLACE, mPlace);
-        startActivity(intent);*/
-    }
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -197,8 +198,6 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
         mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style));
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View marker_view = inflater.inflate(R.layout.maps_marker, null);
-
-        //42.237905,-8.726929
 
         CameraPosition cameraPosition = new CameraPosition.Builder().target(mPlace.getPosition()).zoom(12).build();
         MarkerOptions markerOptions = new MarkerOptions().position(mPlace.getPosition());
@@ -222,13 +221,13 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
     }
 
     private void setAddress(){
-     /*   if(mPlace.getAddress()!=null && mPlace.getAddress().length()>2){
+        if(mPlace.getAddress()!=null && mPlace.getAddress().length()>2){
             findViewById(R.id.lyt_address).setVisibility(View.VISIBLE);
             ((TextView)findViewById(R.id.text_address)).setText(mPlace.getAddress());
         }
         else{
             findViewById(R.id.lyt_address).setVisibility(View.GONE);
-        } */
+        }
     }
 
     private void setDistance(){
@@ -245,7 +244,12 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
             Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse(mPlace.getWebsite()));
             startActivity(browserIntent);
         });
-     //   ((TextView)findViewById(R.id.text_website)).setText(getString(R.string.action_show_website));
+        if(mPlace.getWebsite()!=null && !mPlace.getWebsite().isEmpty()) {
+            ((TextView) findViewById(R.id.text_website)).setText(mPlace.getWebsite());
+        }
+        else{
+            findViewById(R.id.text_website).setVisibility(View.GONE);
+        }
     }
 
     private void setPhone(){
@@ -270,7 +274,7 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
 
     @Override
     public void onClickImageWithUrl(String url) {
-     //   startActivity(ImageActivity.getStartIntent(this,url));
+        startActivity(GalleryActivity.getCallingIntent(this,0, new ArrayList<String>(Arrays.asList(url))));
     }
 
     @OnClick(R.id.bt_navigate)
@@ -279,10 +283,6 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
         startActivity(navigation);
     }
 
-    @OnClick(R.id.bt_view)
-    void onClickOpenMap(){
-     //   startActivity(MapSinglePlaceActivity.getCallingIntent(this,mPlace.getPosition().latitude,mPlace.getPosition().longitude,mPlace.getTitle()));
-    }
 
     @Override
     public void stateError() {

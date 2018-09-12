@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/scroll_itinerary_detail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="MissingPrefix">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_itinerary_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,14 +23,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:textSize="18sp"
-            tools:ignore="MissingPrefix"/>
+            tools:ignore="MissingPrefix" />
 
         <TextView
             android:id="@+id/tv_locale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:textColor="@color/blue_dark"/>
+            android:textColor="@color/blue_dark" />
 
         <LinearLayout
             android:id="@+id/linear_description"
@@ -44,12 +44,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/description"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,12 +65,12 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/schedule"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_schedule"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,12 +86,12 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/email"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,12 +107,12 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/phone"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_phone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,12 +128,12 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/web"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_web"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -149,14 +149,14 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/audio"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <ViewStub
                 android:id="@+id/stub_audioplayer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout="@layout/include_audio_player_view"/>
+                android:layout="@layout/include_audio_player_view" />
         </LinearLayout>
 
         <LinearLayout
@@ -172,13 +172,13 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/gallery"
                 android:textColor="@color/blue_dark"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
             <FrameLayout
                 android:id="@+id/fragment_gallery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp" />
         </LinearLayout>
 
         <FrameLayout
@@ -190,7 +190,7 @@
                 android:id="@+id/fragment_map"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal" />
 
             <FrameLayout
                 android:id="@+id/btn_go_to_place"
@@ -212,7 +212,7 @@
                     android:layout_gravity="center"
                     android:text="@string/go_to_place"
                     android:textColor="@color/white"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
             </FrameLayout>
 

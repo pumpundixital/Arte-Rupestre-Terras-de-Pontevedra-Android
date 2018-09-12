@@ -47,7 +47,6 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
                     .load(holder.mItem)
                     .into(holder.mImage);
             holder.mImage.setOnClickListener(view -> {
-                Timber.i("on click");
                 mListener.onClickImageWithUrl(holder.mItem);
             });
         }
