@@ -189,7 +189,6 @@ public class BottomBar extends LinearLayout {
             if (height == 0 && !force) {
                 ViewTreeObserver vto = getViewTreeObserver();
                 if (vto.isAlive()) {
-                    // view树完成测量并且分配空间而绘制过程还没有开始的时候播放动画。
                     vto.addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
                         @Override
                         public boolean onPreDraw() {

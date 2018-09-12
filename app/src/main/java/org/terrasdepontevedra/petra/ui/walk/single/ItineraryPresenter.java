@@ -195,11 +195,13 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
 
     private String generateUrlFrom(List<Integer> integerList) {
         String url = "";
-        for (int id : integerList) {
-            url += id + ",";
-        }
-        if (url.length() > 0) {
-            url = url.substring(0, url.length() - 1);
+        if(integerList!=null) {
+            for (int id : integerList) {
+                url += id + ",";
+            }
+            if (url.length() > 0) {
+                url = url.substring(0, url.length() - 1);
+            }
         }
         return url;
     }

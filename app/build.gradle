@@ -16,12 +16,12 @@ android {
 
     buildTypes {
         release {
-         //     minifyEnabled true
-         //     shrinkResources true
-         //     proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-         //     consumerProguardFiles 'proguard-rules.txt'
+            //     minifyEnabled true
+            //     shrinkResources true
+            //     proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //     consumerProguardFiles 'proguard-rules.txt'
             lintOptions {
-                    disable 'MissingTranslation'
+                disable 'MissingTranslation'
             }
         }
     }
@@ -29,7 +29,7 @@ android {
     sourceSets {
         main {
 
-            assets.srcDirs = ['/res/raw']
+            assets.srcDirs = ['/res/raw', 'src/main/assets', 'src/main/assets/']
 
         }
     }

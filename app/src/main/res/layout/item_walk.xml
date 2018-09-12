@@ -5,37 +5,40 @@
     android:orientation="horizontal">
 
     <RelativeLayout
-        android:layout_marginRight="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_walk" />
 
         <View
             android:id="@+id/etapa.timeline.normal"
-            android:visibility="gone"
-            android:layout_width="15dp"
-            android:layout_height="match_parent">
-        </View>
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_mid"
+            android:visibility="gone" />
 
         <View
             android:id="@+id/etapa.timeline.start"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
-            android:layout_width="15dp"
-            android:layout_height="match_parent">
-        </View>
+            android:background="@drawable/cylinder_top"/>
 
         <View
-            android:visibility="gone"
             android:id="@+id/etapa.timeline.end"
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="10dp"
-            android:layout_width="15dp"
-            android:layout_height="match_parent">
-        </View>
+            android:background="@drawable/cylinder_bottom"
+            android:visibility="gone"/>
 
-        <View
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="30dp"
-            android:layout_width="13dp"
-            android:layout_height="13dp" />
+
 
     </RelativeLayout>
 

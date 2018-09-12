@@ -60,9 +60,9 @@ public class BottomBarTab extends FrameLayout {
         mTvTitle.setTextSize(18);
         mTvTitle.setTextColor(ContextCompat.getColor(context, R.color.grey_mid));
         mTvTitle.setLayoutParams(paramsTv);
-        /*Typeface face = Typeface.createFromAsset(context.getAssets(),
-                "fonts/Roboto-Medium.ttf");
-        mTvTitle.setTypeface(face);*/
+        Typeface face = Typeface.createFromAsset(context.getAssets(),
+                "fonts/Roboto-Regular.ttf");
+        mTvTitle.setTypeface(face);
 
         lLContainer.addView(mTvTitle);
 
@@ -89,11 +89,18 @@ public class BottomBarTab extends FrameLayout {
     public void setSelected(boolean selected) {
         super.setSelected(selected);
         if (selected) {
-            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_light));
-            mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.colorPrimary));
+            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_mid));
+            mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.white));
+            Typeface face = Typeface.createFromAsset(mContext.getAssets(),
+                    "fonts/Roboto-Black.ttf");
+            mTvTitle.setTypeface(face);
+
         } else {
-            setBackgroundColor(ContextCompat.getColor(mContext, R.color.white));
+            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_light));
             mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.grey_mid));
+            Typeface face = Typeface.createFromAsset(mContext.getAssets(),
+                    "fonts/Roboto-Regular.ttf");
+            mTvTitle.setTypeface(face);
         }
     }
 
@@ -108,40 +115,6 @@ public class BottomBarTab extends FrameLayout {
         return mTabPosition;
     }
 
-    /**
-     * 设置未读数量
-     */
-    public void setUnreadCount(int num) {
-        if (num <= 0) {
-            mTvUnreadCount.setText(String.valueOf(0));
-            mTvUnreadCount.setVisibility(GONE);
-        } else {
-            mTvUnreadCount.setVisibility(VISIBLE);
-            if (num > 99) {
-                mTvUnreadCount.setText("99+");
-            } else {
-                mTvUnreadCount.setText(String.valueOf(num));
-            }
-        }
-    }
-
-    /**
-     * 获取当前未读数量
-     */
-    public int getUnreadCount() {
-        int count = 0;
-        if (TextUtils.isEmpty(mTvUnreadCount.getText())) {
-            return count;
-        }
-        if (mTvUnreadCount.getText().toString().equals("99+")) {
-            return 99;
-        }
-        try {
-            count = Integer.valueOf(mTvUnreadCount.getText().toString());
-        } catch (Exception ignored) {
-        }
-        return count;
-    }
 
     private int dip2px(Context context, float dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, context.getResources().getDisplayMetrics());

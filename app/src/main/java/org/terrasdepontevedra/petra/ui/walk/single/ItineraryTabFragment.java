@@ -17,6 +17,7 @@ import org.terrasdepontevedra.petra.util.Constants;
 
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import me.yokeyword.fragmentation.SupportFragment;
 
@@ -39,6 +40,9 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
     private List<Place> mPlacesList;
 
     ItineraryPresenter mPresenter;
+
+    @BindView(R.id.loading)
+    View mLoading;
 
     public static ItineraryTabFragment newInstance(int id) {
         Bundle args = new Bundle();
@@ -88,6 +92,7 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
         }
         else if(mItineraryId!=-1){
             mPresenter.getData(mItineraryId);
+            showLoading(true);
         }
     }
 
@@ -105,29 +110,29 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
 
             @Override
             public void onTabUnselected(int position) {
-
             }
 
             @Override
             public void onTabReselected(int position) {
-//                EventBus.getDefault().post(new TabSelectedEvent(position));
             }
         });
     }
 
     @Override
     public void stateError() {
+        showLoading(false);
 
     }
 
     @Override
     public void stateEmpty() {
+        showLoading(false);
 
     }
 
     @Override
     public void stateLoading() {
-
+        showLoading(true);
     }
 
     public void stateMain() {
@@ -147,14 +152,19 @@ public class ItineraryTabFragment extends SimpleFragment implements ItineraryCon
 
     @Override
     public void stateErrorNetWork() {
-
+        showLoading(false);
     }
 
     @Override
     public void onDataLoaded(Itinerary currentItinerary, List<Place> placesList) {
+        showLoading(false);
         mItinerary = currentItinerary;
         mPlacesList = placesList;
         stateMain();
+    }
+
+    private void showLoading(boolean loading){
+        mLoading.setVisibility(loading?View.VISIBLE:View.GONE);
     }
 
 
