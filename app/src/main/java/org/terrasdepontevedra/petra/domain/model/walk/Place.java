@@ -69,6 +69,7 @@ public class Place extends Content implements ClusterItem {
             place.setLng(Double.parseDouble(placeDto.getLongitude().get(0)));
         }
 
+
         if (placeDto.getBetter_featured_image() != null
                 && placeDto.getBetter_featured_image().getMedia_details() != null
                 && placeDto.getBetter_featured_image().getMedia_details().getSizes() != null

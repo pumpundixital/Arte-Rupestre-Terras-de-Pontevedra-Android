@@ -188,6 +188,8 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle("");
+        Drawable backArrow = getResources().getDrawable(R.drawable.ic_back);
+        actionBar.setHomeAsUpIndicator(backArrow);
         AndroidUtils.systemBarLolipop(getActivity());
         mToolbar.setNavigationOnClickListener(v -> getActivity().finish());
         mTextTitle.setText(mItinerary.getTitle());

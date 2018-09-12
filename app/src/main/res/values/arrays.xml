@@ -16,7 +16,7 @@
     <array name="ld_activityScreenIcons" translatable="false">
         <item>@drawable/ic_intro</item>
         <item>@drawable/ic_center</item>
-        <item>@drawable/ic_itinerary</item>
+        <item>@drawable/ic_area</item>
         <item>@drawable/ic_itinerary</item>
         <item>@drawable/ic_map</item>
         <item>@drawable/ic_adventure</item>

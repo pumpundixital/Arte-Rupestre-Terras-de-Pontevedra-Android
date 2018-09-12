@@ -2,7 +2,10 @@ package org.terrasdepontevedra.petra.ui.walk.single;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 import org.terrasdepontevedra.petra.R;
 import org.terrasdepontevedra.petra.util.Constants;
@@ -41,6 +44,8 @@ public class WalkActivity extends SupportActivity {
                 loadRootFragment(R.id.fl_container, ItineraryTabFragment.newInstance(id));
             }
         }
+
+
     }
     @Override
     protected void attachBaseContext(Context newBase) {

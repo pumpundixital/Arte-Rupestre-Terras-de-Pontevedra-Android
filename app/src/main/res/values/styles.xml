@@ -1,8 +1,8 @@
 <resources>
 
     <declare-styleable name="UnderlinedTextView">
-        <attr name="underlineWidth" format="dimension"/>
-        <attr name="underlineColor" format="color"/>
+        <attr name="underlineWidth" format="dimension" />
+        <attr name="underlineColor" format="color" />
     </declare-styleable>
 
     <style name="Translucent" parent="Theme.AppCompat.NoActionBar">
@@ -20,6 +20,7 @@
     <style name="Title.collapsed" parent="Title">
         <item name="fontPath">fonts/Roboto-Black.ttf</item>
         <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>
