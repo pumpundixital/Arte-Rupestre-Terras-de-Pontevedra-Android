@@ -59,19 +59,21 @@
                     android:paddingLeft="25dp"
                     android:paddingRight="25dp">
 
-                    <TextView
+                    <org.terrasdepontevedra.petra.ui.views.UnderlinedTextView
                         android:id="@+id/text_single_title"
                         fontPath="fonts/Roboto-Medium.ttf"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="15dp"
                         android:layout_marginTop="15dp"
                         android:maxLines="2"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
+                        app:underlineWidth="3dp"
+                        app:underlineColor="@color/blue_dark"
                         tools:ignore="MissingPrefix" />
+
 
                 </FrameLayout>
 

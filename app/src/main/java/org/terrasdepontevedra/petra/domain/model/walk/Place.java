@@ -141,5 +141,11 @@ public class Place extends Content implements ClusterItem {
         this.imagesUrl = imagesUrl;
     }
 
+    public double getLat() {
+        return lat;
+    }
 
+    public double getLng() {
+        return lng;
+    }
 }

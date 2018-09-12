@@ -19,6 +19,8 @@ import org.json.JSONObject;
 import org.terrasdepontevedra.petra.domain.model.Place;
 import org.terrasdepontevedra.petra.domain.model.PlaceCollection;
 
+import java.util.List;
+
 import timber.log.Timber;
 
 import static org.terrasdepontevedra.petra.data.service.DownloadMapService.JSON_FIELD_REGION_NAME;
@@ -98,6 +100,19 @@ public class MapUtils {
 
         for (Place place : placeCollection.asList()) {
             latLngBounds.include(new LatLng(place.getLocale().getLatitude(), place.getLocale().getLongitude()));
+
+        }
+
+        return latLngBounds.build();
+    }
+
+    public static LatLngBounds getCenterFrom(List<org.terrasdepontevedra.petra.domain.model.walk.Place> placeCollection) {
+        LatLngBounds.Builder latLngBounds = new LatLngBounds.Builder();
+        double latitudeMax = 0;
+        double longitudeMax = 0;
+
+        for (org.terrasdepontevedra.petra.domain.model.walk.Place place : placeCollection) {
+            latLngBounds.include(new LatLng(place.getLat(), place.getLng()));
 
         }
 

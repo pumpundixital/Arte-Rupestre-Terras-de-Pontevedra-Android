@@ -34,6 +34,7 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
@@ -43,6 +44,7 @@ import org.terrasdepontevedra.petra.R;
 import org.terrasdepontevedra.petra.domain.model.walk.Itinerary;
 import org.terrasdepontevedra.petra.domain.model.walk.Place;
 import org.terrasdepontevedra.petra.util.AndroidUtils;
+import org.terrasdepontevedra.petra.util.MapUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -178,7 +180,7 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
         });
     }
 
-    private void setDescription(){
+    private void setDescription() {
         mTextDescription.setText(Html.fromHtml(mItinerary.getContent()));
     }
 
@@ -250,6 +252,12 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
         }
         MapsInitializer.initialize(this.getActivity());
 
+
+        LatLng center = MapUtils.getCenterFrom(mPlaces).getCenter();
+        CameraPosition cameraPosition = new CameraPosition.Builder().target(center).zoom(10).bearing(0).tilt(0).build();
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+
     }
 
     @Override
@@ -258,7 +266,7 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
         final long start = SystemClock.uptimeMillis();
         final long duration = 1500L;
         mHandler.removeCallbacks(mAnimation);
-       // mAnimation = new MapPlacesFragment.BounceAnimation(start, duration, marker, mHandler);
+        // mAnimation = new MapPlacesFragment.BounceAnimation(start, duration, marker, mHandler);
         mHandler.post(mAnimation);
         return false;
     }
