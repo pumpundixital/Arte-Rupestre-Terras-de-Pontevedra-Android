@@ -46,5 +46,11 @@ public interface WalkApi {
     @GET("/wp-json/wp/v2/itinerario")
     Flowable<List<ItineraryDto>> loadWalksEs();
 
+    @GET("/{language}/wp-json/wp/v2/lugar")
+    Flowable<List<PlaceDto>> loadPlaceBySlug(@Path("language") String language, @Query("slug") String link);
+
+    @GET("/wp-json/wp/v2/lugar")
+    Flowable<List<PlaceDto>> loadPlaceBySlugEs(@Query("slug") String link);
+
 
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="org.terrasdepontevedra.petra">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.terrasdepontevedra.petra">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".PetraApplication"
@@ -21,72 +21,76 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"
-            tools:replace="android:value"/>
+            tools:replace="android:value" />
 
         <activity
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.SplashTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".ui.wizard.WizardActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.itinerary.ItineraryActivity"
             android:label="@string/title_activity_itinerary"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.adventure.quiz.QuizActivity"
             android:label="@string/title_activity_quiz"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.center.detail.CenterDetailActivity"
             android:label="@string/title_activity_center_detail"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.adventure.yincana.YincanaActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.adventure.score.ScoreActivity"
             android:label="@string/title_activity_score"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.gallery.GalleryActivity"
             android:label="@string/title_activity_gallery"
             android:screenOrientation="portrait"
-            android:theme="@style/Translucent"/>
+            android:theme="@style/Translucent" />
+
+        <activity
+            android:name=".ui.walk.place.PlaceActivity"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent" />
 
         <activity
             android:name=".ui.walk.single.WalkActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
 
         <service
             android:name=".data.service.DownloadMapService"
-            android:exported="false"/>
+            android:exported="false" />
         <service
             android:name=".data.service.DownloadContentService"
-            android:exported="false"/>
+            android:exported="false" />
         <service
             android:name=".data.service.LocationService"
-            android:exported="false"/>
-        <service android:name=".data.service.GeofenceTransitionsIntentService"/>
-        <service android:name=".data.service.GeofenceTrasitionService"/>
-
+            android:exported="false" />
+        <service android:name=".data.service.GeofenceTransitionsIntentService" />
+        <service android:name=".data.service.GeofenceTrasitionService" />
 
 
     </application>

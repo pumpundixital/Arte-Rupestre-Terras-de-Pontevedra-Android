@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import org.terrasdepontevedra.petra.R;
 import org.terrasdepontevedra.petra.domain.model.walk.Place;
+import org.terrasdepontevedra.petra.ui.walk.place.PlaceActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +67,7 @@ public class ItineraryListFragment extends SupportFragment {
     }
 
     public void onClickPlace(String url) {
-        //startActivity(PlaceActivity.getCallingIntent(getContext(), url));
+        startActivity(PlaceActivity.getCallingIntent(getContext(), url));
     }
 
     /*public LatLng getLatLng() {

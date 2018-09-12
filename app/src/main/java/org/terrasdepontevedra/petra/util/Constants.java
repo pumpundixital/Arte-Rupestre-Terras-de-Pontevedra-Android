@@ -34,6 +34,10 @@ public class Constants {
     public static final String ARG_PLACES_LIST = "ARG_PLACES_LIST";
     public static final String ARG_ITINERARY = "ARG_ITINERARY";
 
+    public static final String ARG_PLACE_LINK = "ARG_PLACE_LINK";
+    public static final String ARG_PLACE_ID = "ARG_PLACE_ID";
+
+
 
     public static final int RESULT_PERMISSION_LOCATION = 1001;
     public static final int RESULT_QUIZ = 101;

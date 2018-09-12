@@ -148,9 +148,7 @@ public class PlaceDto implements Serializable {
     }
 
     public static class GuidBean {
-        /**
-         * rendered : https://vigoexperience.com/?post_type=lugar&#038;p=863
-         */
+
 
         private String rendered;
 
@@ -237,16 +235,6 @@ public class PlaceDto implements Serializable {
     }
 
     public static class BetterFeaturedImageBean {
-        /**
-         * id : 895
-         * alt_text :
-         * caption :
-         * description :
-         * media_type : image
-         * media_details : {"width":800,"height":783,"file":"2017/09/1dinoseto2-1.jpg","sizes":{"thumbnail":{"file":"1dinoseto2-1-375x199.jpg","width":375,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-375x199.jpg"},"medium":{"file":"1dinoseto2-1-203x199.jpg","width":203,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-203x199.jpg"},"medium_large":{"file":"1dinoseto2-1-768x752.jpg","width":768,"height":752,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-768x752.jpg"},"widget":{"file":"1dinoseto2-1-36x36.jpg","width":36,"height":36,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-36x36.jpg"},"square":{"file":"1dinoseto2-1-180x180.jpg","width":180,"height":180,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-180x180.jpg"},"featured":{"file":"1dinoseto2-1-800x430.jpg","width":800,"height":430,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x430.jpg"},"featured_large":{"file":"1dinoseto2-1-800x630.jpg","width":800,"height":630,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x630.jpg"},"portfolio":{"file":"1dinoseto2-1-495x400.jpg","width":495,"height":400,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-495x400.jpg"},"portfolio_small":{"file":"1dinoseto2-1-260x185.jpg","width":260,"height":185,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-260x185.jpg"},"gallery":{"file":"1dinoseto2-1-800x684.jpg","width":800,"height":684,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x684.jpg"},"magazine":{"file":"1dinoseto2-1-710x375.jpg","width":710,"height":375,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-710x375.jpg"},"masonry":{"file":"1dinoseto2-1-705x690.jpg","width":705,"height":690,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-705x690.jpg"},"entry_with_sidebar":{"file":"1dinoseto2-1-800x321.jpg","width":800,"height":321,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x321.jpg"},"entry_without_sidebar":{"file":"1dinoseto2-1-800x423.jpg","width":800,"height":423,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x423.jpg"},"shop_thumbnail":{"file":"1dinoseto2-1-120x120.jpg","width":120,"height":120,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-120x120.jpg"},"shop_catalog":{"file":"1dinoseto2-1-450x450.jpg","width":450,"height":450,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x450.jpg"},"shop_single":{"file":"1dinoseto2-1-450x440.jpg","width":450,"height":440,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x440.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}}
-         * post : 863
-         * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1.jpg
-         */
 
         private int id;
         private String alt_text;
@@ -322,13 +310,7 @@ public class PlaceDto implements Serializable {
         }
 
         public static class MediaDetailsBean {
-            /**
-             * width : 800
-             * height : 783
-             * file : 2017/09/1dinoseto2-1.jpg
-             * sizes : {"thumbnail":{"file":"1dinoseto2-1-375x199.jpg","width":375,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-375x199.jpg"},"medium":{"file":"1dinoseto2-1-203x199.jpg","width":203,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-203x199.jpg"},"medium_large":{"file":"1dinoseto2-1-768x752.jpg","width":768,"height":752,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-768x752.jpg"},"widget":{"file":"1dinoseto2-1-36x36.jpg","width":36,"height":36,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-36x36.jpg"},"square":{"file":"1dinoseto2-1-180x180.jpg","width":180,"height":180,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-180x180.jpg"},"featured":{"file":"1dinoseto2-1-800x430.jpg","width":800,"height":430,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x430.jpg"},"featured_large":{"file":"1dinoseto2-1-800x630.jpg","width":800,"height":630,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x630.jpg"},"portfolio":{"file":"1dinoseto2-1-495x400.jpg","width":495,"height":400,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-495x400.jpg"},"portfolio_small":{"file":"1dinoseto2-1-260x185.jpg","width":260,"height":185,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-260x185.jpg"},"gallery":{"file":"1dinoseto2-1-800x684.jpg","width":800,"height":684,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x684.jpg"},"magazine":{"file":"1dinoseto2-1-710x375.jpg","width":710,"height":375,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-710x375.jpg"},"masonry":{"file":"1dinoseto2-1-705x690.jpg","width":705,"height":690,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-705x690.jpg"},"entry_with_sidebar":{"file":"1dinoseto2-1-800x321.jpg","width":800,"height":321,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x321.jpg"},"entry_without_sidebar":{"file":"1dinoseto2-1-800x423.jpg","width":800,"height":423,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x423.jpg"},"shop_thumbnail":{"file":"1dinoseto2-1-120x120.jpg","width":120,"height":120,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-120x120.jpg"},"shop_catalog":{"file":"1dinoseto2-1-450x450.jpg","width":450,"height":450,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x450.jpg"},"shop_single":{"file":"1dinoseto2-1-450x440.jpg","width":450,"height":440,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x440.jpg"}}
-             * image_meta : {"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}
-             */
+
 
             private int width;
             private int height;
@@ -377,25 +359,6 @@ public class PlaceDto implements Serializable {
             }
 
             public static class SizesBean {
-                /**
-                 * thumbnail : {"file":"1dinoseto2-1-375x199.jpg","width":375,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-375x199.jpg"}
-                 * medium : {"file":"1dinoseto2-1-203x199.jpg","width":203,"height":199,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-203x199.jpg"}
-                 * medium_large : {"file":"1dinoseto2-1-768x752.jpg","width":768,"height":752,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-768x752.jpg"}
-                 * widget : {"file":"1dinoseto2-1-36x36.jpg","width":36,"height":36,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-36x36.jpg"}
-                 * square : {"file":"1dinoseto2-1-180x180.jpg","width":180,"height":180,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-180x180.jpg"}
-                 * featured : {"file":"1dinoseto2-1-800x430.jpg","width":800,"height":430,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x430.jpg"}
-                 * featured_large : {"file":"1dinoseto2-1-800x630.jpg","width":800,"height":630,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x630.jpg"}
-                 * portfolio : {"file":"1dinoseto2-1-495x400.jpg","width":495,"height":400,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-495x400.jpg"}
-                 * portfolio_small : {"file":"1dinoseto2-1-260x185.jpg","width":260,"height":185,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-260x185.jpg"}
-                 * gallery : {"file":"1dinoseto2-1-800x684.jpg","width":800,"height":684,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x684.jpg"}
-                 * magazine : {"file":"1dinoseto2-1-710x375.jpg","width":710,"height":375,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-710x375.jpg"}
-                 * masonry : {"file":"1dinoseto2-1-705x690.jpg","width":705,"height":690,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-705x690.jpg"}
-                 * entry_with_sidebar : {"file":"1dinoseto2-1-800x321.jpg","width":800,"height":321,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x321.jpg"}
-                 * entry_without_sidebar : {"file":"1dinoseto2-1-800x423.jpg","width":800,"height":423,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x423.jpg"}
-                 * shop_thumbnail : {"file":"1dinoseto2-1-120x120.jpg","width":120,"height":120,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-120x120.jpg"}
-                 * shop_catalog : {"file":"1dinoseto2-1-450x450.jpg","width":450,"height":450,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x450.jpg"}
-                 * shop_single : {"file":"1dinoseto2-1-450x440.jpg","width":450,"height":440,"mime-type":"image/jpeg","source_url":"https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x440.jpg"}
-                 */
 
                 private ThumbnailBean thumbnail;
                 private MediumBean medium;
@@ -552,13 +515,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class ThumbnailBean {
-                    /**
-                     * file : 1dinoseto2-1-375x199.jpg
-                     * width : 375
-                     * height : 199
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-375x199.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -609,13 +566,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class MediumBean {
-                    /**
-                     * file : 1dinoseto2-1-203x199.jpg
-                     * width : 203
-                     * height : 199
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-203x199.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -666,13 +616,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class MediumLargeBean {
-                    /**
-                     * file : 1dinoseto2-1-768x752.jpg
-                     * width : 768
-                     * height : 752
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-768x752.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -723,13 +666,8 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class WidgetBean {
-                    /**
-                     * file : 1dinoseto2-1-36x36.jpg
-                     * width : 36
-                     * height : 36
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-36x36.jpg
-                     */
+
+
 
                     private String file;
                     private int width;
@@ -780,13 +718,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class SquareBean {
-                    /**
-                     * file : 1dinoseto2-1-180x180.jpg
-                     * width : 180
-                     * height : 180
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-180x180.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -837,13 +769,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class FeaturedBean {
-                    /**
-                     * file : 1dinoseto2-1-800x430.jpg
-                     * width : 800
-                     * height : 430
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x430.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -894,13 +820,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class FeaturedLargeBean {
-                    /**
-                     * file : 1dinoseto2-1-800x630.jpg
-                     * width : 800
-                     * height : 630
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x630.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -951,13 +871,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class PortfolioBean {
-                    /**
-                     * file : 1dinoseto2-1-495x400.jpg
-                     * width : 495
-                     * height : 400
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-495x400.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1008,13 +921,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class PortfolioSmallBean {
-                    /**
-                     * file : 1dinoseto2-1-260x185.jpg
-                     * width : 260
-                     * height : 185
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-260x185.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -1065,13 +972,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class GalleryBean {
-                    /**
-                     * file : 1dinoseto2-1-800x684.jpg
-                     * width : 800
-                     * height : 684
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x684.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -1122,13 +1023,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class MagazineBean {
-                    /**
-                     * file : 1dinoseto2-1-710x375.jpg
-                     * width : 710
-                     * height : 375
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-710x375.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1179,13 +1073,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class MasonryBean {
-                    /**
-                     * file : 1dinoseto2-1-705x690.jpg
-                     * width : 705
-                     * height : 690
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-705x690.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -1236,13 +1124,7 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class EntryWithSidebarBean {
-                    /**
-                     * file : 1dinoseto2-1-800x321.jpg
-                     * width : 800
-                     * height : 321
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x321.jpg
-                     */
+
 
                     private String file;
                     private int width;
@@ -1293,13 +1175,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class EntryWithoutSidebarBean {
-                    /**
-                     * file : 1dinoseto2-1-800x423.jpg
-                     * width : 800
-                     * height : 423
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-800x423.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1350,13 +1225,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class ShopThumbnailBean {
-                    /**
-                     * file : 1dinoseto2-1-120x120.jpg
-                     * width : 120
-                     * height : 120
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-120x120.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1407,13 +1275,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class ShopCatalogBean {
-                    /**
-                     * file : 1dinoseto2-1-450x450.jpg
-                     * width : 450
-                     * height : 450
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x450.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1464,13 +1325,6 @@ public class PlaceDto implements Serializable {
                 }
 
                 public static class ShopSingleBean {
-                    /**
-                     * file : 1dinoseto2-1-450x440.jpg
-                     * width : 450
-                     * height : 440
-                     * mime-type : image/jpeg
-                     * source_url : https://vigoexperience.com/wp-content/uploads/2017/09/1dinoseto2-1-450x440.jpg
-                     */
 
                     private String file;
                     private int width;
@@ -1709,9 +1563,7 @@ public class PlaceDto implements Serializable {
         }
 
         public static class SelfBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/lugar/863
-             */
+
 
             private String href;
 
@@ -1725,9 +1577,7 @@ public class PlaceDto implements Serializable {
         }
 
         public static class CollectionBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/lugar
-             */
+
 
             private String href;
 
@@ -1741,9 +1591,7 @@ public class PlaceDto implements Serializable {
         }
 
         public static class AboutBean {
-            /**
-             * href : https://vigoexperience.com/wp-json/wp/v2/types/lugar
-             */
+
 
             private String href;
 
@@ -1757,10 +1605,7 @@ public class PlaceDto implements Serializable {
         }
 
         public static class AuthorBean {
-            /**
-             * embeddable : true
-             * href : https://vigoexperience.com/wp-json/wp/v2/users/2
-             */
+
 
             private boolean embeddable;
             private String href;
