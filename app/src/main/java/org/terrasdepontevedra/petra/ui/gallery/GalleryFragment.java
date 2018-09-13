@@ -37,6 +37,7 @@ import co.mobiwise.materialintro.shape.ShapeType;
 import co.mobiwise.materialintro.view.MaterialIntroView;
 
 import static org.terrasdepontevedra.petra.ui.gallery.GalleryActivity.getCallingIntent;
+import static org.terrasdepontevedra.petra.util.Constants.ARG_REQUIRE_EVENTS;
 
 
 public class GalleryFragment extends BaseFragment {
@@ -54,10 +55,11 @@ public class GalleryFragment extends BaseFragment {
 
     private ArrayList<String> mImagesUrl;
 
-    public static GalleryFragment newInstance(ArrayList<String> imagesUrls) {
+    public static GalleryFragment newInstance(ArrayList<String> imagesUrls, boolean requireEvents) {
         GalleryFragment fragment = new GalleryFragment();
         Bundle args = new Bundle();
         args.putStringArrayList(Constants.ARG_IMAGES_URLS, imagesUrls);
+        args.putBoolean(Constants.ARG_REQUIRE_EVENTS,requireEvents);
         fragment.setArguments(args);
         return fragment;
     }
@@ -66,41 +68,69 @@ public class GalleryFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mImagesUrl = getArguments().getStringArrayList(Constants.ARG_IMAGES_URLS);
-
-        mSlider = new SliderLayout(getContext(),mImagesUrl.size());
+        mSlider = new SliderLayout(getContext(),mImagesUrl!=null?mImagesUrl.size():0);
         frameSlider.addView(mSlider);
         mSlider.stopAutoCycle();
 
-        if (mImagesUrl.size() == 1) {
-            mSlider.setPagerTransformer(false, new BaseTransformer() {
-                @Override
-                protected void onTransform(View view, float position) {
 
+        if(mImagesUrl!=null) {
+            if (mImagesUrl.size() == 1) {
+                mSlider.setPagerTransformer(false, new BaseTransformer() {
+                    @Override
+                    protected void onTransform(View view, float position) {
+
+                    }
+                });
+                mSlider.setIndicatorVisibility(PagerIndicator.IndicatorVisibility.Invisible);
+            } else {
+
+                mSlider.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
+
+                    @Override
+                    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+                    }
+
+                    @Override
+                    public void onPageSelected(int position) {
+                        mEventBus.post(new OnGalleryImageChange(position));
+                    }
+
+                    @Override
+                    public void onPageScrollStateChanged(int state) {
+
+                    }
+
+                });
+            }
+            setSliderItems();
+
+            view.findViewById(R.id.layout_slider_right).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (getArguments().getBoolean(ARG_REQUIRE_EVENTS, true)) {
+                        mEventBus.post(new OnGalleryImageChange(mSlider.getCurrentPosition() + 1));
+                    } else {
+                        if(mSlider.getCurrentPosition()<mImagesUrl.size()-1) {
+                            mSlider.setCurrentPosition(mSlider.getCurrentPosition() + 1);
+                        }
+                    }
                 }
             });
-            mSlider.setIndicatorVisibility(PagerIndicator.IndicatorVisibility.Invisible);
-        } else {
 
-            mSlider.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
-
+            view.findViewById(R.id.layout_slider_left).setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                public void onClick(View v) {
+                    if (getArguments().getBoolean(ARG_REQUIRE_EVENTS, true)) {
+                        mEventBus.post(new OnGalleryImageChange(mSlider.getCurrentPosition() - 1));
+                    } else {
+                        if(mSlider.getCurrentPosition()>0) {
+                            mSlider.setCurrentPosition(mSlider.getCurrentPosition() - 1);
+                        }
+                    }
                 }
-
-                @Override
-                public void onPageSelected(int position) {
-                    mEventBus.post(new OnGalleryImageChange(position));
-                }
-
-                @Override
-                public void onPageScrollStateChanged(int state) {
-
-                }
-
             });
         }
-        setSliderItems();
 
     }
 
@@ -136,7 +166,7 @@ public class GalleryFragment extends BaseFragment {
                     .setScaleType(BaseSliderView.ScaleType.CenterCrop);
             mSlider.addSlider(textSliderView);
         }
-
+        mSlider.setCurrentPosition(0);
     }
 
     @Subscribe

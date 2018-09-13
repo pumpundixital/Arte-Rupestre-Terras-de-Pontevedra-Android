@@ -19,6 +19,8 @@ public class Constants {
     public static final String ARG_RECEIVER = "ARG_RECEIVER";
     public static final String ARG_QUIZ = "ARG_QUIZ";
     public static final String ARG_IMAGES_URLS = "ARG_IMAGES_URLS";
+    public static final String ARG_REQUIRE_EVENTS = "ARG_REQUIRE_EVENTS";
+
 
     public static final String ARG_WIZARD_POSITION = "ARG_WIZARD_POSITION";
     public static final String ARG_WIZARD_DESC = "ARG_WIZARD_DESC";

@@ -234,7 +234,7 @@ public class ItineraryActivity
         mBtnStart.setVisibility(View.GONE);
         mTvHindBtnStart.setVisibility(View.GONE);
 
-        mFragmentService.replaceAndAddToBackStack(GalleryFragment.newInstance(placeCollection.getFeaturedImagesUrl()), R.id.container_top);
+        mFragmentService.replaceAndAddToBackStack(GalleryFragment.newInstance(placeCollection.getFeaturedImagesUrl(),true), R.id.container_top);
         mFragmentService.replaceAndAddToBackStack(PlaceDetailFragment.newInstance(placeCollection, position), R.id.container_bot);
 
     }

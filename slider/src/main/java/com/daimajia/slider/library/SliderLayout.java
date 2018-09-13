@@ -191,9 +191,16 @@ public class SliderLayout extends RelativeLayout{
             }
         });
 
-        setPresetIndicator(PresetIndicators.Center_Bottom);
+        if(count<10) {
+            setPresetIndicator(PresetIndicators.Center_Bottom);
+            setIndicatorVisibility(mIndicatorVisibility);
+            setIndicatorVisibility(PagerIndicator.IndicatorVisibility.Visible);
+        }
+        else{
+            setIndicatorVisibility(PagerIndicator.IndicatorVisibility.Invisible);
+        }
         setSliderTransformDuration(mTransformerSpan,null);
-        setIndicatorVisibility(mIndicatorVisibility);
+
         if(mAutoCycle){
             startAutoCycle();
         }

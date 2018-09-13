@@ -141,6 +141,8 @@ public class CenterDetailActivity extends BaseActivity implements CenterDetailMv
 
     }
 
+
+
     @Override
     public void onStart() {
         super.onStart();
@@ -227,7 +229,7 @@ public class CenterDetailActivity extends BaseActivity implements CenterDetailMv
 
     @Override
     public void showGallery(List<String> imagesUrl) {
-        mFragmentService.add(GalleryFragment.newInstance(new ArrayList<>(imagesUrl)), R.id.layout_gallery);
+        mFragmentService.add(GalleryFragment.newInstance(new ArrayList<>(imagesUrl),false), R.id.layout_gallery);
     }
 
     @Override
