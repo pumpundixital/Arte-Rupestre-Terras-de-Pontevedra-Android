@@ -43,6 +43,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import org.terrasdepontevedra.petra.R;
 import org.terrasdepontevedra.petra.domain.model.walk.Itinerary;
 import org.terrasdepontevedra.petra.domain.model.walk.Place;
+import org.terrasdepontevedra.petra.ui.walk.place.PlaceActivity;
 import org.terrasdepontevedra.petra.util.AndroidUtils;
 import org.terrasdepontevedra.petra.util.MapUtils;
 
@@ -239,6 +240,13 @@ public class ItineraryDetailFragment extends SupportFragment implements OnMapRea
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View marker_view = inflater.inflate(R.layout.maps_marker, null);
             googleMap.addMarker(new MarkerOptions().position(location).title(title)).setIcon((BitmapDescriptorFactory.fromBitmap(AndroidUtils.createBitmapFromView(getActivity(), marker_view))));
+            int finalI = i;
+            googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                @Override
+                public void onInfoWindowClick(Marker arg0) {
+                    getContext().startActivity(PlaceActivity.getCallingIntent(getContext(),mPlaces.get(finalI).getLink()));
+                }
+            });
         }
 
         googleMap.getUiSettings().setZoomControlsEnabled(true);

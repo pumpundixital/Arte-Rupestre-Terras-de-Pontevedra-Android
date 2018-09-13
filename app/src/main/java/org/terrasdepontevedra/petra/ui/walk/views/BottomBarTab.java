@@ -16,11 +16,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.terrasdepontevedra.petra.R;
+import org.terrasdepontevedra.petra.ui.views.UnderlinedTextView;
+import org.terrasdepontevedra.petra.util.ScreenUtils;
 
 
 public class BottomBarTab extends FrameLayout {
     private LinearLayout lLContainer;
-    private TextView mTvTitle;
+    private UnderlinedTextView mTvTitle;
     private Context mContext;
     private int mTabPosition = -1;
 
@@ -53,16 +55,19 @@ public class BottomBarTab extends FrameLayout {
         paramsContainer.gravity = Gravity.CENTER;
         lLContainer.setLayoutParams(paramsContainer);
 
-        mTvTitle = new TextView(context);
+        mTvTitle = new UnderlinedTextView(context);
         mTvTitle.setText(title);
         LinearLayout.LayoutParams paramsTv = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         paramsTv.topMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 2, getResources().getDisplayMetrics());
         mTvTitle.setTextSize(18);
-        mTvTitle.setTextColor(ContextCompat.getColor(context, R.color.grey_mid));
+        mTvTitle.setTextColor(ContextCompat.getColor(context, R.color.grey_dark));
         mTvTitle.setLayoutParams(paramsTv);
+        mTvTitle.setUnderlineWidth(-100);
         Typeface face = Typeface.createFromAsset(context.getAssets(),
                 "fonts/Roboto-Regular.ttf");
         mTvTitle.setTypeface(face);
+        setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_mid));
+        mTvTitle.setUnderLineColor(ContextCompat.getColor(mContext,R.color.grey_mid));
 
         lLContainer.addView(mTvTitle);
 
@@ -89,18 +94,16 @@ public class BottomBarTab extends FrameLayout {
     public void setSelected(boolean selected) {
         super.setSelected(selected);
         if (selected) {
-            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_mid));
-            mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.white));
-            Typeface face = Typeface.createFromAsset(mContext.getAssets(),
-                    "fonts/Roboto-Black.ttf");
-            mTvTitle.setTypeface(face);
+            setBackgroundColor(ContextCompat.getColor(mContext, R.color.white));
+            mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.black));
+            mTvTitle.setUnderLineColor(ContextCompat.getColor(mContext,R.color.colorPrimary));
+            mTvTitle.setUnderlineWidth(dip2px(mContext,3));
 
         } else {
-            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_light));
-            mTvTitle.setTextColor(ContextCompat.getColor(mContext, R.color.grey_mid));
-            Typeface face = Typeface.createFromAsset(mContext.getAssets(),
-                    "fonts/Roboto-Regular.ttf");
-            mTvTitle.setTypeface(face);
+            setBackgroundColor(ContextCompat.getColor(mContext, R.color.grey_mid));
+            mTvTitle.setUnderLineColor(ContextCompat.getColor(mContext,R.color.grey_dark));
+            mTvTitle.setUnderLineColor(ContextCompat.getColor(mContext,R.color.grey_mid));
+
         }
     }
 
