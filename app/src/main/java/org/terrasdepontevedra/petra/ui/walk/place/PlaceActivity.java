@@ -279,7 +279,7 @@ public class PlaceActivity extends AppCompatActivity implements OnMapReadyCallba
 
     @OnClick(R.id.bt_navigate)
     void onClickNavigate(){
-        Intent navigation = new Intent(Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=" + mPlace.getPosition().latitude + "," + mPlace.getPosition().longitude));
+        Intent navigation = new Intent(Intent.ACTION_VIEW, Uri.parse("http://maps.google.com/maps?daddr=" + mPlace.getLat() + "," + mPlace.getLng()));
         startActivity(navigation);
     }
 

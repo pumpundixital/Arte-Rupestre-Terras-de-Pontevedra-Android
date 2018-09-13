@@ -140,6 +140,7 @@
         </LinearLayout>
 
         <FrameLayout
+
             android:id="@+id/btn_go_to_place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

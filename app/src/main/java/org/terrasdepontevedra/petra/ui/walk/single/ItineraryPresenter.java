@@ -185,7 +185,7 @@ public class ItineraryPresenter extends RxPresenter<ItineraryContract.View> impl
                         public void onNext(List<Place> places) {
                             if (!places.isEmpty()) {
                                 Timber.i("on data loaded");
-                                //mView.onDataLoaded(mItinerary, places);
+                                mView.onDataLoaded(mItinerary, places);
                             }
                         }
                     })

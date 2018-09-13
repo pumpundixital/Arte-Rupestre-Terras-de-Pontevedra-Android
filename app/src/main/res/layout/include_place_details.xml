@@ -138,45 +138,34 @@
 
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/the_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:orientation="vertical">
+        android:gravity="end"
+        android:orientation="horizontal">
 
-        <TextView
-            fontPath="fonts/Roboto-Medium.ttf"
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/material_grey_800" />
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp">
 
-
-        <fragment
-            android:id="@+id/map_place_detail"
-            android:name="com.google.android.gms.maps.MapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="150dp" />
-
-
-        <LinearLayout
-            android:id="@+id/the_item"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end"
-            android:orientation="horizontal">
+            <fragment
+                android:id="@+id/map_place_detail"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
 
             <FrameLayout
-                android:layout_marginEnd="18dp"
-                android:layout_marginTop="15dp"
                 android:id="@+id/bt_navigate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start|bottom"
-                android:layout_marginBottom="15dp"
-                android:layout_marginStart="17dp"
-                android:background="@drawable/cylinder_black"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/cylinder_blue"
                 android:minWidth="140dp"
                 android:paddingBottom="10dp"
                 android:paddingEnd="30dp"
@@ -192,8 +181,8 @@
                     android:textSize="18sp" />
 
             </FrameLayout>
-        </LinearLayout>
 
+        </FrameLayout>
     </LinearLayout>
 
 

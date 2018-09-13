@@ -72,17 +72,22 @@ public class UnderlinedTextView extends AppCompatTextView {
         final Layout layout = getLayout();
         float x_start, x_stop, x_diff;
         int firstCharInLine, lastCharInLine;
+        try {
 
-        for (int i = 0; i < count; i++) {
-            int baseline = getLineBounds(i, mRect);
-            firstCharInLine = layout.getLineStart(i);
-            lastCharInLine = layout.getLineEnd(i);
+            for (int i = 0; i < count; i++) {
+                int baseline = getLineBounds(i, mRect);
+                firstCharInLine = layout.getLineStart(i);
+                lastCharInLine = layout.getLineEnd(i);
 
-            x_start = layout.getPrimaryHorizontal(firstCharInLine);
-            x_diff = layout.getPrimaryHorizontal(firstCharInLine + 1) - x_start;
-            x_stop = layout.getPrimaryHorizontal(lastCharInLine - 1) + x_diff;
+                x_start = layout.getPrimaryHorizontal(firstCharInLine);
+                x_diff = layout.getPrimaryHorizontal(firstCharInLine + 1) - x_start;
+                x_stop = layout.getPrimaryHorizontal(lastCharInLine - 1) + x_diff;
 
-            canvas.drawLine(x_start, baseline + mStrokeWidth, x_stop, baseline + mStrokeWidth, mPaint);
+                canvas.drawLine(x_start, baseline + mStrokeWidth, x_stop, baseline + mStrokeWidth, mPaint);
+            }
+        }
+        catch (Exception e){
+
         }
 
         super.onDraw(canvas);
