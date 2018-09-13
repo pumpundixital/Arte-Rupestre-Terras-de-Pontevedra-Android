@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.daimajia.slider.library.Indicators.PagerIndicator;
@@ -44,10 +45,12 @@ public class GalleryFragment extends BaseFragment {
     @Inject
     PreferencesCollector mPreferencesCollector;
 
-    @BindView(R.id.slider)
     SliderLayout mSlider;
     @BindView(R.id.btn_full_screen)
     ImageView mBtnFullScreen;
+
+    @BindView(R.id.slider)
+    FrameLayout frameSlider;
 
     private ArrayList<String> mImagesUrl;
 
@@ -63,6 +66,9 @@ public class GalleryFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mImagesUrl = getArguments().getStringArrayList(Constants.ARG_IMAGES_URLS);
+
+        mSlider = new SliderLayout(getContext(),mImagesUrl.size());
+        frameSlider.addView(mSlider);
         mSlider.stopAutoCycle();
 
         if (mImagesUrl.size() == 1) {
@@ -74,6 +80,7 @@ public class GalleryFragment extends BaseFragment {
             });
             mSlider.setIndicatorVisibility(PagerIndicator.IndicatorVisibility.Invisible);
         } else {
+
             mSlider.addOnPageChangeListener(new ViewPagerEx.OnPageChangeListener() {
 
                 @Override

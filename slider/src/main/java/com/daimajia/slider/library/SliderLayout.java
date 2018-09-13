@@ -86,16 +86,18 @@ import java.util.TimerTask;
  */
 public class SliderLayout extends RelativeLayout{
 
-    private final Context mContext;
+    public int count = 1;
+
+    private  Context mContext;
     /**
      * InfiniteViewPager is extended from ViewPagerEx. As the name says, it can scroll without bounder.
      */
-    private final InfiniteViewPager mViewPager;
+    private  InfiniteViewPager mViewPager;
 
     /**
      * InfiniteViewPager adapter.
      */
-    private final SliderAdapter mSliderAdapter;
+    private  SliderAdapter mSliderAdapter;
 
     /**
      * {@link com.daimajia.slider.library.Tricks.ViewPagerEx} indicator.
@@ -125,7 +127,7 @@ public class SliderLayout extends RelativeLayout{
      */
     private boolean mAutoRecover = true;
 
-    private final int mTransformerId;
+
 
     /**
      * {@link com.daimajia.slider.library.Tricks.ViewPagerEx} transformer time span.
@@ -162,30 +164,16 @@ public class SliderLayout extends RelativeLayout{
         this(context,null);
     }
 
-    public SliderLayout(Context context, AttributeSet attrs) {
-        this(context,attrs,R.attr.SliderStyle);
-    }
 
-    public SliderLayout(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
+    public SliderLayout(Context context,int count) {
+        this(context,null);
+        this.count = count;
         mContext = context;
         LayoutInflater.from(context).inflate(R.layout.slider_layout, this, true);
 
-        final TypedArray attributes = context.getTheme().obtainStyledAttributes(attrs,R.styleable.SliderLayout,
-                defStyle,0);
 
-        mTransformerSpan = attributes.getInteger(R.styleable.SliderLayout_pager_animation_span, 1100);
-        mTransformerId = attributes.getInt(R.styleable.SliderLayout_pager_animation, Transformer.Default.ordinal());
-        mAutoCycle = attributes.getBoolean(R.styleable.SliderLayout_auto_cycle,true);
-        int visibility = attributes.getInt(R.styleable.SliderLayout_indicator_visibility,0);
-        for(PagerIndicator.IndicatorVisibility v: PagerIndicator.IndicatorVisibility.values()){
-            if(v.ordinal() == visibility){
-                mIndicatorVisibility = v;
-                break;
-            }
-        }
         mSliderAdapter = new SliderAdapter();
-        PagerAdapter wrappedAdapter = new InfinitePagerAdapter(mSliderAdapter);
+        PagerAdapter wrappedAdapter = new InfinitePagerAdapter(mSliderAdapter,count);
 
         mViewPager = findViewById(R.id.daimajia_slider_viewpager);
         mViewPager.setAdapter(wrappedAdapter);
@@ -195,7 +183,7 @@ public class SliderLayout extends RelativeLayout{
             public boolean onTouch(View v, MotionEvent event) {
                 int action = event.getAction();
                 switch (action) {
-                     case MotionEvent.ACTION_UP:
+                    case MotionEvent.ACTION_UP:
                         recoverCycle();
                         break;
                 }
@@ -203,14 +191,21 @@ public class SliderLayout extends RelativeLayout{
             }
         });
 
-        attributes.recycle();
         setPresetIndicator(PresetIndicators.Center_Bottom);
-        setPresetTransformer(mTransformerId);
         setSliderTransformDuration(mTransformerSpan,null);
         setIndicatorVisibility(mIndicatorVisibility);
         if(mAutoCycle){
             startAutoCycle();
         }
+    }
+
+    public SliderLayout(Context context, AttributeSet attrs) {
+        this(context,attrs,R.attr.SliderStyle);
+    }
+
+    public SliderLayout(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+
     }
 
     public void addOnPageChangeListener(ViewPagerEx.OnPageChangeListener onPageChangeListener){

@@ -18,9 +18,11 @@ public class InfinitePagerAdapter extends PagerAdapter {
     private static final boolean DEBUG = false;
 
     private final SliderAdapter adapter;
+    private int count;
 
-    public InfinitePagerAdapter(SliderAdapter adapter) {
+    public InfinitePagerAdapter(SliderAdapter adapter, int count) {
         this.adapter = adapter;
+        this.count = count;
     }
 
     public SliderAdapter getRealAdapter(){
@@ -31,7 +33,7 @@ public class InfinitePagerAdapter extends PagerAdapter {
     public int getCount() {
         // warning: scrolling to very high values (1,000,000+) results in
         // strange drawing behaviour
-        return 3000;
+        return count;
     }
 
     /**
