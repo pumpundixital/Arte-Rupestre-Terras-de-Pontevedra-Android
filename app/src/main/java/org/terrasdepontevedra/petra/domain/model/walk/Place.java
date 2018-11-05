@@ -53,9 +53,9 @@ public class Place extends Content implements ClusterItem {
         if (placeDto.getLongitude() != null) {
             place.setLng(Double.parseDouble(placeDto.getLongitude().get(0)));
         }
-        if (placeDto.getTipodelugar() != null) {
-            place.setCategory(placeDto.getTipodelugar().get(0));
-        }
+        //if (placeDto.getTipodelugar()!=null &&  placeDto.getTipodelugar().get(0)!= null) {
+         //   place.setCategory(placeDto.getTipodelugar().get(0));
+        //}
 
         if (placeDto.getImages() != null) {
             place.setImagesUrl(placeDto.getImages());

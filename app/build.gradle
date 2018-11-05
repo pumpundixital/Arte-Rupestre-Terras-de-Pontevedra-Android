@@ -7,8 +7,8 @@ android {
         applicationId "org.terrasdepontevedra.petra"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1000021
-        versionName "1.0.21"
+        versionCode 1001000
+        versionName "1.1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
