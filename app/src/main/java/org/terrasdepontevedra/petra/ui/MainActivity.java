@@ -343,7 +343,7 @@ public class MainActivity extends BaseActivity
                 createItemFor(POS_CENTERS).setChecked(true),
                 createItemFor(POS_ITINERARIES),
                 createItemFor(POS_WALK),
-                createItemFor(POS_MAP),
+                //createItemFor(POS_MAP),
                 createItemFor(POS_ADVENTURE),
                 createItemFor(POS_HELP),
                 createItemFor(POS_MORE_INFO),

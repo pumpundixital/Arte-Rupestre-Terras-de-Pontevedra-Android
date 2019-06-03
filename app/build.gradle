@@ -7,8 +7,8 @@ android {
         applicationId "org.terrasdepontevedra.petra"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1001003
-        versionName "1.1.3"
+        versionCode 1001004
+        versionName "1.1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
@@ -21,7 +21,10 @@ android {
             //     proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             //     consumerProguardFiles 'proguard-rules.txt'
             lintOptions {
-                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                // Or, if you prefer, you can continue to check for errors in release builds,
+                // but continue the build even when errors are found:
+                abortOnError false
             }
         }
     }
@@ -95,6 +98,8 @@ dependencies {
     compile 'us.belka:androidtoggleswitch:1.2.2'
     compile 'com.txusballesteros:FitChart:1.0'
     compile 'com.github.john990:WaveView:v0.9'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
 
     annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.0.1"
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
